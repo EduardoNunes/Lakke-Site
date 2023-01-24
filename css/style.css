@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+h1 {
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: transformers;
+    src: url(../Transformers\ Movie.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #612a2d;
+    background: linear-gradient(to right, black, #612a2d);
+}
+
+header {       
+    background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
+    border-bottom: 2px solid #f13239;   
+}
+
+header .centro {
+    display: flex;
+    width: 89%;
+    align-items: center;
+    margin-left: 6%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    width: 90px;
+}
+
+header .icones {
+    padding-left: 8px;    
+}
+
+header .icones img {     
+    width: 30px;
+    transition: 0.3s;    
+}
+
+header .icones img:hover {    
+    cursor: pointer;
+    width: 40px;
+    transition: 0.3s;
+}
+
+header .icones a + a {
+    margin-left: 8px;
+}
+
+header ul {
+    list-style: none; 
+    display: flex; 
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    font-family: transformers;
+    font-size: 18px;
+    color: #a73a3e;
+    text-decoration: none;
+    transition: color 0.2s;  
+}
+
+header a:hover {
+    color: #e1b55e;
+}
+
+.banner {
+    height: 320px;
+    max-width: max-content;
+    display: flex;
+}
+
+.banner img{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;    
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('/images/anterior.png');
+    top: 33%;
+    left: 15%;
+    cursor: pointer;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('/images/proximo.png');
+    top: 33%;
+    right: 15%;
+    cursor: pointer;
+}
+
+.slick-list {
+    width: 100%!important;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 2px solid #fbefe1;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    display: flex;
+    left: 44%;
+    position: absolute;    
+    top: 270px;
+}
+
+li.slick-active button {
+    background: #f13239;
+}
+
+.slick-dots li {    
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 32px auto;    
+}
+
+.container h2 {
+    font-family: transformers;
+    margin-top: 32px;
+    margin-bottom: 26px;
+    padding-left: 8px;
+    color: #7e1b17;
+    border-left: 4px solid #e1b55e;    
+}
+
+.gallery1-wrapper {
+    overflow-x: auto;
+}
+
+.gallery1-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery1 {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.gallery1 iframe {
+    border-radius: 16px;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 32px;    
+    bottom: 0;
+    font-size: 30px;    
+    width: 40px;
+    text-align: center;
+    color: #7e1b17;
+    cursor: pointer;
+    border: none;    
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-left {
+    left: 0;
+    right: auto;
+    background: linear-gradient(to left, transparent 5%, #59191b);
+}
+
+.arrow-right {  
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 5%, black 200%);
+}
+
+.arrow-left:hover,
+.arrow-right:hover{    
+    width: 5%;
+    font-size: 35px;
+    color: #f13239;
+}
+
+.item {
+    width: 350px;
+    height: 200px;
+    flex-shrink: 0;    
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+    border: 5px solid transparent;    
+}
+
+footer {
+    background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
+    border-top: 2px solid #f13239;
+    padding: 64px 24px;
+    text-align: center;
+}
+
+footer p {
+    font-family: transformers;
+    font-size: 18px;
+    color: #a73a3e;
+}
