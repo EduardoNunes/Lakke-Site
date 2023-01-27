@@ -156,45 +156,61 @@ li.slick-active button {
 
 .container {
     position: relative;
-    display: block;
     padding: 15px;
+    display: block;    
     max-width: 1200px;
     margin: 32px auto 50px;
     height: 450px;
     align-items: center;
 }
 
+
 .container h2 {
     font-family: transformers;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 45px;
+    margin-bottom: 2px;
     padding-left: 8px;
     color: #7e1b17;
     border-left: 4px solid #e1b55e;    
 }
 
-.gallery1-wrapper {
+.container h3 {
+    font-family: transformers;
+    font-size: 23px;   
+    margin-bottom: 40px;
+    padding-left: 8px;
+    color: #7e1b17;
+    border-left: 4px solid #e1b55e;
+    transition: 0.5s;
+}
+
+.container h3:hover {
+    color: #f13239;
+    transition: 0.5s;
+}
+
+.gallery-wrapper {
     overflow-x: auto;
 }
 
-.gallery1-wrapper::-webkit-scrollbar {
+.gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-.gallery1 {
+.gallery {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;    
 }
 
-.gallery1 iframe {
+.gallery iframe {
     border-radius: 16px;
 }
 
 .arrow-left,
 .arrow-right {
     position: absolute;
-    top: 32px;    
+    top: 0;    
     bottom: 0;
     font-size: 30px;    
     width: 40px;
@@ -227,17 +243,22 @@ li.slick-active button {
 .item {
     width: 350px;
     height: 200px;
-    flex-shrink: 0;    
-    transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+    border: 3px solid #59191b;
+    transition: all 0.3s ease-in-out;   
+}
+
+.current-item {
+    border: 3px solid #e1b55e;
 }
 
 .item:hover {
-    border: 5px solid transparent;    
+    border: 3px solid #f13239
 }
 
 section {
     background-image: url('../images/Cimento\ 2.jpeg');
-    size: 100%;
+    background-size: cover;
     display: flex;
     width: 100%;
 }
@@ -246,13 +267,14 @@ section .container2 {
     display: flex;
     position: relative;
     height: 600px;
-    width: 1000px;    
+    width: 1200px;    
     margin-left: auto;
     margin-right: auto;    
 }
 
 .spotify {
     display: flex;
+    justify-content: space-between;
 }
 
 .spotify .imagem img { 
@@ -274,14 +296,14 @@ section .container2 {
 }
 
 .spotify .logo-spotify img {
-    width: 60px;
+    width: 100px;
     margin-top: 160px;
     transition: 0.3s;
     cursor: pointer;
 }
 
 .spotify .logo-spotify img:hover {
-    width: 70px;
+    width: 90px;
     transition: 0.3s;
 }
 

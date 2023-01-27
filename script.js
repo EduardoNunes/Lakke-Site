@@ -29,7 +29,7 @@ controls.forEach((control) => {
 
         if (currentItem < 0) {
             currentItem = maxItems - 1;
-        }
+        }        
 
         items.forEach(item => item.classList.remove('current-item'));
 
@@ -37,7 +37,6 @@ controls.forEach((control) => {
             inline: "center",
             behavior: "smooth",
         });
-
-        items[currentItem].classList.add("current-item");
+        items[currentItem].classList.add("current-item");        
     });
 });
