@@ -45,14 +45,14 @@ header .icones {
 }
 
 header .icones img {     
-    width: 30px;
+    width: 30px;    
     transition: 0.3s;    
 }
 
-header .icones img:hover {    
+header .icones img:hover {
     cursor: pointer;
     width: 40px;
-    transition: 0.3s;
+    transition: 0.3s;    
 }
 
 header .icones a + a {
@@ -81,13 +81,13 @@ header a:hover {
 }
 
 .banner {
-    height: 320px;
+    height: 400px;
     max-width: max-content;
     display: flex;
 }
 
 .banner img{
-    height: 320px;
+    height: 400px;
     width: 100%;
     object-fit: cover;    
 }
@@ -138,7 +138,7 @@ button.slick-next {
     display: flex;
     left: 44%;
     position: absolute;    
-    top: 270px;
+    top: 350px;
 }
 
 li.slick-active button {
@@ -156,15 +156,18 @@ li.slick-active button {
 
 .container {
     position: relative;
+    display: block;
     padding: 15px;
     max-width: 1200px;
-    margin: 32px auto;    
+    margin: 32px auto 50px;
+    height: 450px;
+    align-items: center;
 }
 
 .container h2 {
     font-family: transformers;
-    margin-top: 32px;
-    margin-bottom: 26px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     padding-left: 8px;
     color: #7e1b17;
     border-left: 4px solid #e1b55e;    
@@ -181,7 +184,7 @@ li.slick-active button {
 .gallery1 {
     display: flex;
     flex-flow: row nowrap;
-    gap: 15px;
+    gap: 15px;    
 }
 
 .gallery1 iframe {
@@ -230,6 +233,63 @@ li.slick-active button {
 
 .item:hover {
     border: 5px solid transparent;    
+}
+
+section {
+    background-image: url('../images/Cimento\ 2.jpeg');
+    size: 100%;
+    display: flex;
+    width: 100%;
+}
+
+section .container2 {
+    display: flex;
+    position: relative;
+    height: 600px;
+    width: 1000px;    
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.spotify {
+    display: flex;
+}
+
+.spotify .imagem img { 
+    width: 400px;
+    top: auto;
+}
+
+.spotify .janela-spotify iframe {   
+    height: 400px;
+    bottom: auto;
+    margin-top: 100px;
+}
+
+.logo-spotify {
+    position: relative;
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.spotify .logo-spotify img {
+    width: 60px;
+    margin-top: 160px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.spotify .logo-spotify img:hover {
+    width: 70px;
+    transition: 0.3s;
+}
+
+.spotify .logo-spotify h3, a {
+    font-size: 30px;
+    font-family: transformers;
+    text-decoration: none;
+    color: #a73a3e;
 }
 
 footer {
