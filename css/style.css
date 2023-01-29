@@ -45,7 +45,7 @@ header .icones {
 }
 
 header .icones img {     
-    width: 30px;    
+    width: 35px;    
     transition: 0.3s;    
 }
 
@@ -188,7 +188,7 @@ li.slick-active button {
 }
 
 .container h3:hover {
-    color: #494343;
+    color: #e1b55e;
     transition: 0.5s;
 }
 
@@ -207,8 +207,17 @@ li.slick-active button {
     height: 250px;
 }
 
-.gallery iframe {
+.item {
+    width: 400px;
     border-radius: 16px;
+    height: 200px;
+    border: 3px solid #59191b;
+    border-radius: 8px;
+    transition: all 300ms ease-in-out;
+}
+
+.current-item {
+    border: 3px solid #e1b55e;        
 }
 
 .arrow-left,
@@ -242,18 +251,6 @@ li.slick-active button {
     font-size: 40px;
     color: #f13239;
     opacity: 1;
-}
-
-.item {   
-    width: 350px;
-    max-height: 200px;    
-    border: 3px solid #59191b;
-    border-radius: 8px;
-    transition: all 300ms ease-in-out;
-}
-
-.current-item {
-    border: 3px solid #e1b55e;        
 }
 
 section {
@@ -297,11 +294,14 @@ section {
 .logo-spotify h3 {
     color: #a73a3e;
     font-family: transformers;
-    font-size: 140%;    
+    font-size: 140%;
+    transition: 0.3s;
 }
 
 .logo-spotify h3:hover {
     cursor: pointer;
+    color: #e1b55e;
+    transition: 0.3s;
 }
 
 .logo-spotify a {
@@ -330,6 +330,8 @@ footer p {
     color: #a73a3e;
 }
 
-@media screen {
-    
+@media screen and (max-width: 320px) {
+    .item {
+        width: 240px;
+    }
 }
