@@ -183,6 +183,10 @@ li.slick-active button {
     transition: 0.5s;
 }
 
+.container a {
+    text-decoration: none;
+}
+
 .container h3:hover {
     color: #494343;
     transition: 0.5s;
@@ -242,92 +246,75 @@ li.slick-active button {
 
 .item {   
     width: 350px;
-    height: 200px;
-    flex-shrink: 0;
-    opacity: 0.7;
+    max-height: 200px;    
     border: 3px solid #59191b;
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
 .current-item {
-    border: 3px solid #e1b55e;
-    opacity: 1;    
+    border: 3px solid #e1b55e;        
 }
 
 section {
+    width: auto;
     background-image: url('../images/Cimento\ 2.jpeg');
-    background-size: cover;    
-    width: 100%;
+    left: auto;
+    right: auto;       
 }
 
-section .container2 {    
-    position: relative;
-    height: auto;
-    width: auto;    
+.container2 {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;       
 }
 
 .spotify {
-    display: flex;       
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
+    display: flex;
     flex-wrap: wrap;
-}
-
-.logo-spotify {
-    width: 31%;    
-    text-align: center;
+    max-width: 100%;
     align-items: center;
-    margin: 0;
+    text-align: center;
+    justify-content: space-around;    
 }
 
-.logo-spotify img {
+.spotify div {    
+    flex: 1 1 372px;
+    padding: 5px;
+}
+
+.logo-spotify img {    
     width: 31%;
-    margin-top: 160px;
+    padding-bottom: 15px;
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .logo-spotify img:hover {
     width: 34%;
-    transition: 0.3s;
+    transition: 0.3s;    
 }
 
-.logo-spotify .texto {     
-    font-size: 140%;
-    cursor: pointer;    
-}
-
-.texto h3 {    
-    font-family: transformers;    
-    text-decoration: none;
+.logo-spotify h3 {
     color: #a73a3e;
+    font-family: transformers;
+    font-size: 140%;    
 }
 
-.imagem-lakke {
-    width: 31%;
+.logo-spotify h3:hover {
+    cursor: pointer;
+}
+
+.logo-spotify a {
+    text-decoration: none;
 }
 
 .imagem-lakke img {
     width: 100%;
-    min-width: 150px;
-    text-align: center;
+    max-width: 350px;    
 }
 
-.janela-spotify {
-    padding-top: 12%;        
-    max-width: 31%;
-    text-align: center;
-    flex-wrap: wrap;      
-}
-
-.janela-spotify iframe {       
-    height: 25em;    
-    margin: left;    
+.janela-spotify iframe {
+    height: 25em;
 }
 
 footer {
@@ -341,4 +328,8 @@ footer p {
     font-family: transformers;
     font-size: 18px;
     color: #a73a3e;
+}
+
+@media screen {
+    
 }
