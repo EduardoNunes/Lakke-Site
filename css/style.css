@@ -24,7 +24,7 @@ body {
 
 header {       
     background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
-    border-bottom: 2px solid #f13239;   
+    border-bottom: 2px solid #f13239;    
 }
 
 header .centro {
@@ -56,7 +56,7 @@ header .icones img:hover {
 }
 
 header .icones a + a {
-    margin-left: 8px;
+    margin-left: 8px;    
 }
 
 header ul {
@@ -71,6 +71,7 @@ header ul li + li {
 header a {
     font-family: transformers;
     font-size: 18px;
+    text-shadow: 1px 1px black;
     color: #a73a3e;
     text-decoration: none;
     transition: color 0.2s;  
@@ -166,19 +167,21 @@ li.slick-active button {
 
 .container h2 {
     font-family: transformers;
+    text-shadow: 1px 1px rgb(0, 0, 0);
     margin-top: 45px;
     margin-bottom: 2px;
     padding-left: 8px;
-    color: #7e1b17;
+    color: #a73a3e;
     border-left: 4px solid #e1b55e;    
 }
 
 .container h3 {
     font-family: transformers;
+    text-shadow: 1px 1px black;
     font-size: 23px;   
     margin-bottom: 40px;
     padding-left: 8px;
-    color: #7e1b17;
+    color: #a73a3e;
     border-left: 4px solid #e1b55e;
     transition: 0.5s;
 }
@@ -211,7 +214,7 @@ li.slick-active button {
     width: 400px;
     border-radius: 16px;
     height: 200px;
-    border: 3px solid #59191b;
+    border: 3px solid #f13239;
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
@@ -293,6 +296,7 @@ section {
 
 .logo-spotify h3 {
     color: #a73a3e;
+    text-shadow: 1px 1px black;
     font-family: transformers;
     font-size: 140%;
     transition: 0.3s;
@@ -328,6 +332,7 @@ footer p {
     font-family: transformers;
     font-size: 18px;
     color: #a73a3e;
+    text-shadow: 1px 1px black;
 }
 
 @media screen and (max-width: 320px) {
