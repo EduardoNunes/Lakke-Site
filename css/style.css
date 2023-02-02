@@ -85,6 +85,7 @@ header a:hover {
     height: 400px;
     max-width: max-content;
     display: flex;
+    border-bottom: 1px solid #a73a3e;
 }
 
 .banner img{
@@ -162,7 +163,7 @@ li.slick-active button {
     padding-left: 27px;
     max-width: 1200px;
     height: 450px;
-    margin: 70px auto 160px;
+    margin: 70px auto 130px;
 }
 
 .container h2 {
@@ -260,13 +261,16 @@ section {
     width: auto;
     background-image: url('../images/Cimento\ 2.jpeg');
     left: auto;
-    right: auto;       
+    right: auto;
+    border-top: 1px solid #a73a3e;
+    border-bottom: 1px solid #a73a3e;
 }
 
 .container2 {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;       
+    margin-right: auto;
+    padding-bottom: 30px;    
 }
 
 .spotify {
@@ -319,6 +323,41 @@ section {
 
 .janela-spotify iframe {
     height: 25em;
+}
+
+.apoiadores {
+    background: none;
+    height: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.logo-apoiadores {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.logo-apoiadores img {    
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;   
+    padding: 8px;    
+    transition: 0.3s;
+}
+
+.logo-apoiadores img:hover {
+    width: 95%;
+    transition: 0.3s;
 }
 
 footer {
