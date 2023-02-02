@@ -336,6 +336,18 @@ section {
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    border: none;
+}
+
+.apoio {
+    text-align: left;
+    width: 100%;    
+    font-family: transformers;
+    text-shadow: 1px 1px rgb(0, 0, 0);    
+    padding-left: 8px;
+    color: #a73a3e;
+    border-left: 4px solid #e1b55e;
+    height: 30px;
 }
 
 .logo-apoiadores {
@@ -345,8 +357,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px;   
 }
 
 .logo-apoiadores img {    
@@ -364,8 +375,9 @@ section {
 footer {
     background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
     border-top: 2px solid #f13239;
-    padding: 64px 24px;
+    padding: 64px 0;
     text-align: center;
+    height: 180px;
 }
 
 footer p {
@@ -374,6 +386,108 @@ footer p {
     color: #a73a3e;
     text-shadow: 1px 1px black;
 }
+
+
+/*FALE COM LAKKE___________________________________________________*/
+
+.container3 {
+    background-image: url('../images/Decepticons.jpg');
+    background-size: cover;
+    background-position: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.limite {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.imagem-lakke2 {
+    width: 30%;
+    min-width: 250px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imagem-lakke2 img {
+    width: 100%;
+}
+
+.contato {
+    background-image: url('../images/Cimento\ 2.jpeg');
+    border: 2px solid #f13239;
+    background-size: auto;
+    background-position: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;    
+    height: 340px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 40%;
+    min-width: 320px;
+    
+}
+
+.caixa {
+    width: 100%;
+    min-width: 320px;
+    padding: 20px;
+}
+
+.caixa div {
+    margin: 10px 0;
+}
+
+.topic-box {
+    font-family: transformers;
+    font-size: 20px;
+    color: #b0b0b0;
+    text-shadow: #e1b55e;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 30px;
+}
+
+.input-box input::placeholder {
+    padding-left: 10px;
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 130px;
+    margin-right: 15px;
+}
+
+.input-box textarea::placeholder {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.button input {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* RESPOSIVIDADE ____________________________________________________________*/
 
 @media screen and (max-width: 320px) {
     .item {
