@@ -493,8 +493,28 @@ footer p {
 .button button {
     width: 90px;
     height: 30px;
+    font-family: transformers;
     margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    border: 3px solid #f13239;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    transition: .5s;
+    text-shadow: 1px 1px #1b1b1b;
+    
 }
+
+.button button:hover {
+    background-color: #e1b55e;
+    border: 3px solid #3c3c3c;
+    text-shadow: 1px 1px #b0b0b0;
+    color: #1b1b1b;
+    transition: .5s;
+    font-weight: bold;
+}
+
 
 
 
