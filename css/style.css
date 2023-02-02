@@ -345,13 +345,14 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo-apoiadores img {    
     width: 100%;
-    min-width: 200px;
-    max-width: 250px;   
-    padding: 8px;    
+    min-width: 100px;
+    max-width: 200px;       
     transition: 0.3s;
 }
 
