@@ -19,8 +19,12 @@ h1 {
 body {
     font-family: sans-serif;
     background-color: #612a2d;
-    background: linear-gradient(to right, black, #612a2d);
+    background-image: url('../images/Decepticons.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 header {       
     background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
@@ -72,7 +76,7 @@ header a {
     font-family: transformers;
     font-size: 18px;
     text-shadow: 1px 1px black;
-    color: #a73a3e;
+    color: #f13239;
     text-decoration: none;
     transition: color 0.2s;  
 }
@@ -85,7 +89,7 @@ header a:hover {
     height: 400px;
     max-width: max-content;
     display: flex;
-    border-bottom: 1px solid #a73a3e;
+    border-bottom: 1px solid #f13239;
 }
 
 .banner img{
@@ -172,7 +176,7 @@ li.slick-active button {
     margin-top: 45px;
     margin-bottom: 2px;
     padding-left: 8px;
-    color: #a73a3e;
+    color: #f13239;
     border-left: 4px solid #e1b55e;    
 }
 
@@ -182,7 +186,7 @@ li.slick-active button {
     font-size: 23px;   
     margin-bottom: 40px;
     padding-left: 8px;
-    color: #a73a3e;
+    color: #f13239;
     border-left: 4px solid #e1b55e;
     transition: 0.5s;
 }
@@ -246,7 +250,7 @@ li.slick-active button {
 .arrow-right {    
     left: auto;
     right: 0;    
-    background: linear-gradient(to right, transparent 0%, black 100%);    
+    background: linear-gradient(to right, transparent 0%, #f13239 300%);    
 }
 
 .arrow-left:hover,
@@ -262,8 +266,8 @@ section {
     background-image: url('../images/Cimento\ 2.jpeg');
     left: auto;
     right: auto;
-    border-top: 1px solid #a73a3e;
-    border-bottom: 1px solid #a73a3e;
+    border-top: 1px solid #f13239;
+    border-bottom: 1px solid #f13239;
 }
 
 .container2 {
@@ -299,7 +303,7 @@ section {
 }
 
 .logo-spotify h3 {
-    color: #a73a3e;
+    color: #f13239;
     text-shadow: 1px 1px black;
     font-family: transformers;
     font-size: 140%;
@@ -345,7 +349,7 @@ section {
     font-family: transformers;
     text-shadow: 1px 1px rgb(0, 0, 0);    
     padding-left: 8px;
-    color: #a73a3e;
+    color: #f13239;
     border-left: 4px solid #e1b55e;
     height: 30px;
 }
@@ -383,7 +387,7 @@ footer {
 footer p {
     font-family: transformers;
     font-size: 18px;
-    color: #a73a3e;
+    color: #f13239;
     text-shadow: 1px 1px black;
 }
 
@@ -522,7 +526,7 @@ footer p {
     font-size: 200%;   
     font-family: transformers;
     text-decoration: none;
-    color: #a73a3e;
+    color: #f13239;
     text-shadow: 1px 1px black;
     transition: .3s;
 }
@@ -543,7 +547,7 @@ footer p {
     font-size: 200%;   
     font-family: transformers;
     text-decoration: none;
-    color: #a73a3e;
+    color: #f13239;
     text-shadow: 1px 1px black;
     transition: .3s;
 }
