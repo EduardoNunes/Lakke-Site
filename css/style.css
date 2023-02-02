@@ -393,7 +393,7 @@ footer p {
 .container3 {
     background-image: url('../images/Decepticons.jpg');
     background-size: cover;
-    background-position: 10px;
+    background-position: center;
     margin-right: auto;
     margin-left: auto;
 }
@@ -463,7 +463,11 @@ footer p {
     height: 30px;
 }
 
-.input-box input::placeholder {
+.input-box input[type=text] {
+    padding-left: 10px;
+}
+
+.input-box input[type=email] {
     padding-left: 10px;
 }
 
@@ -474,14 +478,84 @@ footer p {
 }
 
 .input-box textarea::placeholder {
-    padding-left: 10px;
     font-size: 15px;
 }
 
-.button input {
+.input-box textarea[type=text] {
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.button button {
     width: 90px;
     height: 30px;
     margin-bottom: 15px;
+}
+
+
+
+/* Pagina 3 Obrigado__________________________________________________________________*/
+.obrigado{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    height: 600px;    
+    text-align: center;
+}
+
+.obrigado .texto-obrigado {
+    max-width: 1200px;
+    background-image: url('../images/Cimento\ 2.jpeg');
+    opacity: 85%;
+    border: 2px solid #f13239;
+    border-radius: 8px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.obrigado h1, h2, h3 {    
+    width: 100%;
+    font-size: 200%;   
+    font-family: transformers;
+    text-decoration: none;
+    color: #a73a3e;
+    text-shadow: 1px 1px black;
+    transition: .3s;
+}
+
+.texto {
+    border: 2px solid #f13239;
+    background-color: black;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+}
+
+.texto a {
+    width: 100%;
+    font-size: 200%;   
+    font-family: transformers;
+    text-decoration: none;
+    color: #a73a3e;
+    text-shadow: 1px 1px black;
+    transition: .3s;
+}
+
+.obrigado a:hover {
+    color: #e1b55e;
+    transition: .3s;
+}
+
+.obrigado .texto:hover {
+    border: 2px solid #e1b55e;
+    transition: .3s;
 }
 
 
