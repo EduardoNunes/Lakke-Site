@@ -325,7 +325,16 @@ section {
 
 .imagem-lakke img {
     width: 100%;
-    max-width: 350px;    
+    max-width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 19px #f13239;
+    transition: 0.3s;    
+}
+
+.imagem-lakke img:hover {
+    box-shadow: 0 0 40px #e1b55e;    
+    transition: 2s;
+    cursor: pointer;
 }
 
 .janela-spotify iframe {
