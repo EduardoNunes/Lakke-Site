@@ -198,6 +198,7 @@ li.slick-active button {
 .container h3:hover {
     color: #e1b55e;
     transition: 0.5s;
+    text-shadow: 0 0 10px #f13239;
 }
 
 .gallery-wrapper {
@@ -225,7 +226,8 @@ li.slick-active button {
 }
 
 .current-item {
-    border: 3px solid #e1b55e;        
+    border: 3px solid #e1b55e;
+    box-shadow: 0 0 10px #f13239;
 }
 
 .arrow-left,
@@ -314,6 +316,7 @@ section {
     cursor: pointer;
     color: #e1b55e;
     transition: 0.3s;
+    text-shadow: 0 0 10px #f13239;
 }
 
 .logo-spotify a {
@@ -364,16 +367,23 @@ section {
     padding-top: 20px;   
 }
 
+.logo-apoiadores h1 {
+    margin-bottom: 25px;
+}
+
 .logo-apoiadores img {    
     width: 100%;
     min-width: 100px;
     max-width: 200px;       
     transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #f13239;    
 }
 
 .logo-apoiadores img:hover {
     width: 95%;
     transition: 0.3s;
+    box-shadow: 0 0 20px #e1b55e;
 }
 
 footer {
