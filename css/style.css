@@ -41,7 +41,15 @@ header .centro {
 }
 
 header .logo img {
+    margin-top: 5px;
     width: 90px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+header .logo img:hover {
+    box-shadow: 0 0 6px #e1b55e;
+    transition: .3s;
 }
 
 header .icones {
@@ -241,7 +249,7 @@ li.slick-active button {
     line-height: 250px;
     width: 40px;
     text-align: center;
-    color: #fff;
+    color: #e1b55e;
     cursor: pointer;
     border: none;
     background: linear-gradient(to left, transparent 0%, #f13239 300%);
@@ -347,6 +355,7 @@ section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;   
     align-items: center;
@@ -428,6 +437,8 @@ footer p {
     margin-right: auto;
     margin-left: auto;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .imagem-lakke2 {
@@ -441,6 +452,14 @@ footer p {
 
 .imagem-lakke2 img {
     width: 100%;
+    box-shadow: 0 0 10px #f13239;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.imagem-lakke2 img:hover {
+    box-shadow: 0 0 30px #e1b55e;
+    transition: 2s;
 }
 
 .contato {
@@ -527,8 +546,9 @@ footer p {
 
 .button button:hover {
     background-color: #e1b55e;
-    border: 3px solid #3c3c3c;
+    border: 3px solid #1b1b1b;
     text-shadow: 1px 1px #b0b0b0;
+    box-shadow: 0 0 10px #f13239;
     color: #1b1b1b;
     transition: .5s;
     font-weight: bold;
