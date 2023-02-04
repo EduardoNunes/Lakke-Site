@@ -48,7 +48,7 @@ header .logo img {
 }
 
 header .logo img:hover {
-    box-shadow: 0 0 6px #e1b55e;
+    box-shadow: 0 0 10px #612a2d;
     transition: .3s;
 }
 
@@ -181,6 +181,7 @@ li.slick-active button {
 .container h2 {
     font-family: transformers;
     text-shadow: 1px 1px rgb(0, 0, 0);
+    font-size: clamp(1.5em, 1em + 1vw, 1.5em);
     margin-top: 45px;
     margin-bottom: 2px;
     padding-left: 8px;
@@ -191,7 +192,7 @@ li.slick-active button {
 .container h3 {
     font-family: transformers;
     text-shadow: 1px 1px black;
-    font-size: 23px;   
+    font-size: clamp(1em, 1em + 1vw, 1.5em);   
     margin-bottom: 40px;
     padding-left: 8px;
     color: #f13239;
@@ -278,6 +279,7 @@ section {
     right: auto;
     border-top: 1px solid #f13239;
     border-bottom: 1px solid #f13239;
+    padding-top: 40px;
 }
 
 .container2 {
@@ -316,7 +318,7 @@ section {
     color: #f13239;
     text-shadow: 1px 1px black;
     font-family: transformers;
-    font-size: 140%;
+    font-size: clamp(1em, 1em + 1vw, 1.7em);
     transition: 0.3s;
 }
 
@@ -395,7 +397,8 @@ section {
     max-width: 200px;       
     transition: 0.3s;
     border-radius: 50%;
-    box-shadow: 0 0 15px #f13239;    
+    box-shadow: 0 0 15px #f13239;
+    margin-top: 10px;  
 }
 
 .logo-apoiadores img:hover {
@@ -425,9 +428,7 @@ footer p {
 .container3 {
     background-image: url('../images/Decepticons.jpg');
     background-size: cover;
-    background-position: center;
-    margin-right: auto;
-    margin-left: auto;
+    background-position: center;    
 }
 
 .limite {
@@ -557,7 +558,7 @@ footer p {
 
 
 
-/* Pagina 3 Obrigado__________________________________________________________________*/
+/* Pagina 3 thanks__________________________________________________________________*/
 .obrigado{
     max-width: 1200px;
     margin-left: auto;
@@ -582,7 +583,7 @@ footer p {
 
 .obrigado h1, h2, h3 {    
     width: 100%;
-    font-size: 200%;   
+    font-size: clamp(1em, 1em + 1vw, 2em);   
     font-family: transformers;
     text-decoration: none;
     color: #f13239;
@@ -594,7 +595,7 @@ footer p {
     border: 2px solid #f13239;
     background-color: black;
     border-radius: 8px;
-    width: 50%;
+    width: 29%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -603,7 +604,7 @@ footer p {
 
 .texto a {
     width: 100%;
-    font-size: 200%;   
+    font-size: clamp(1em, 0.5em + 1vw, 1.5em);   
     font-family: transformers;
     text-decoration: none;
     color: #f13239;
@@ -619,6 +620,7 @@ footer p {
 .obrigado .texto:hover {
     border: 2px solid #e1b55e;
     transition: .3s;
+    box-shadow: 0 0 15px #f13239;
 }
 
 
