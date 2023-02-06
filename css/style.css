@@ -685,7 +685,7 @@ footer p {
 }
 
 
-.caixa-coligado button, .caixa-coligado .button{
+.caixa-coligado button, .caixa-coligado .button, .quadro-geral button {
     height: 27px;
     font-size: 15px;
     text-decoration: none;
@@ -700,7 +700,7 @@ footer p {
     margin: 5px 0;
 }
 
-.caixa-coligado .button:hover, button:hover {
+.caixa-coligado .button:hover,.caixa-coligado button:hover, .quadro-geral button:hover  {
     border: 2px solid #1b1b1b;
     background-color: #e1b55e;
     color: #1b1b1b;    
@@ -752,6 +752,36 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.artistas {
+    display: flex;
+}
+
+.artistas .smart {
+    width: auto;
+}
+
+.artistas .smart .foto-smart {
+    width: 300px;
+}
+
+.artistas .smart .logo-smart {
+    width: 300px;
+}
+
+.artistas .space {
+    width: auto;
+}
+
+.artistas .space .foto-space {
+    width: 400px;
+}
+
+.artistas .space .logo-space {
+    width: 400px;
+}
+
+#txtCollab{display: none}
 
 /* RESPOSIVIDADE ____________________________________________________________*/
 
