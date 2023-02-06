@@ -746,7 +746,12 @@ footer p {
 
 #vantagens-collab{display: none}
 
-
+/*COLLABS page 4_____________________________________________________________*/
+.quadro-geral {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* RESPOSIVIDADE ____________________________________________________________*/
 
