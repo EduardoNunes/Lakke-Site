@@ -207,7 +207,7 @@ li.slick-active button {
 .container h3:hover {
     color: #e1b55e;
     transition: 0.5s;
-    text-shadow: 0 0 10px #f13239;
+    text-shadow: 0 0 10px #f13239;    
 }
 
 .gallery-wrapper {
@@ -235,7 +235,7 @@ li.slick-active button {
 }
 
 .current-item {
-    border: 3px solid #e1b55e;
+    border: 5px solid #e1b55e;
     box-shadow: 0 0 10px #f13239;
 }
 
@@ -357,7 +357,7 @@ section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;   
     align-items: center;
@@ -404,15 +404,16 @@ section {
 .logo-apoiadores img:hover {
     width: 95%;
     transition: 0.3s;
-    box-shadow: 0 0 20px #e1b55e;
+    box-shadow: 0 0 60px #e1b55e;    
 }
 
 footer {
     background: linear-gradient(to right, rgb(94, 94, 94), rgb(0, 0, 0));
     border-top: 2px solid #f13239;
-    padding: 64px 0;
+    padding: 64px 0 0 0;
     text-align: center;
     height: 180px;
+    
 }
 
 footer p {
@@ -424,7 +425,6 @@ footer p {
 
 
 /*FALE COM LAKKE___________________________________________________*/
-
 .container3 {
     background-image: url('../images/Decepticons.jpg');
     background-size: cover;
@@ -529,7 +529,7 @@ footer p {
     padding-top: 3px;
 }
 
-.button button {
+.caixa .button button {
     width: 90px;
     height: 30px;
     font-family: transformers;
@@ -545,7 +545,7 @@ footer p {
     
 }
 
-.button button:hover {
+.caixa .button button:hover {
     background-color: #e1b55e;
     border: 3px solid #1b1b1b;
     text-shadow: 1px 1px #b0b0b0;
@@ -577,12 +577,10 @@ footer p {
     border-radius: 8px;
     padding: 30px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 
 .obrigado h1, h2, h3 {    
-    width: 100%;
     font-size: clamp(1em, 1em + 1vw, 2em);   
     font-family: transformers;
     text-decoration: none;
@@ -596,6 +594,7 @@ footer p {
     background-color: black;
     border-radius: 8px;
     width: 29%;
+    min-width: 170px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -623,6 +622,129 @@ footer p {
     box-shadow: 0 0 15px #f13239;
 }
 
+/* BUSINESS Page 4 _______________________________________________________________*/
+.coligado {    
+    max-width: 1200px;
+    height: auto;
+    min-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 90%;
+}
+
+.caixa-coligado {
+    background-image: url('../images/Cimento\ 2.jpeg');    
+    border: 2px solid #f13239;
+    margin: 30px;
+    padding: 10px 20px 30px 1%;
+    border-radius: 10px;    
+}
+
+.coligado h1 {
+    font-family: transformers;
+    font-size: clamp(1em, 1em + 1vw, 2em);
+    text-align: center; 
+    margin-top: 10px;   
+    color: #f13239;
+    transition: .3s;
+    text-shadow: 0 0 10px black;
+}
+
+.coligado h4 {
+    font-family: transformers;
+    margin-top: 10px 0;
+    font-size: clamp(10px, 1em + 1vw, 1.5em);
+    color: #e1b55e;
+    text-shadow: 0 0 10px black;
+}
+
+.coligado p {
+    font-family: transformers;
+    font-size: clamp(1em, 1em + 1vw, 1.2em);
+    color: #f13239;
+    text-shadow: 0 0 10px black;
+    margin: 5px 5%;
+}
+
+.coligado h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7%;
+    color: antiquewhite;
+    text-shadow: 0 0 10px #1b1b1b;
+}
+
+.coligado li {
+    margin-left: 20px;
+}
+
+.coligado h6 {
+    font-family: transformers;
+    margin-left: 40px;
+    color: #b0b0b0;
+    text-shadow: 0 0 10px #1b1b1b;
+}
+
+
+.caixa-coligado button, .caixa-coligado .button{
+    height: 27px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #f13239;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: black;
+    color: #fbefe1;    
+    font-family: transformers;
+    transition: .3s;
+    margin: 5px 0;
+}
+
+.caixa-coligado .button:hover, button:hover {
+    border: 2px solid #1b1b1b;
+    background-color: #e1b55e;
+    color: #1b1b1b;    
+    font-family: transformers;
+    transition: .3s;
+    box-shadow: 0 0 10px #f13239;
+}
+
+.caixa-coligado .subtitle {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.caixa-coligado .subtitle:hover {
+    color: #e1b55e;
+    text-shadow: 0 0 10px #e1b55e;
+}
+
+.caixa-coligado .button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
+    width: 153px;
+}
+
+#vantagens-parceiro{display: none}
+#vantagens-parceiro1{display: none}
+#vantagens-parceiro2{display: none}
+
+#vantagens-apoiador{display: none}
+#vantagens-apoiador1{display: none}
+#vantagens-apoiador2{display: none}
+#vantagens-apoiador3{display: none}
+
+#vantagens-patrocinador{display: none}
+#vantagens-patrocinador1{display: none}
+#vantagens-patrocinador2{display: none}
+#vantagens-patrocinador3{display: none}
+#vantagens-patrocinador4{display: none}
+#vantagens-patrocinador5{display: none}
+#vantagens-patrocinador6{display: none}
+#vantagens-patrocinador7{display: none}
+
+#vantagens-collab{display: none}
 
 
 
