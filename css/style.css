@@ -343,7 +343,7 @@ section {
 
 .imagem-lakke img:hover {
     box-shadow: 0 0 40px #e1b55e;    
-    transition: 2s;
+    transition: 1s;
     cursor: pointer;
 }
 
@@ -753,13 +753,21 @@ footer p {
     margin-right: auto;
 }
 
-.quadro-geral h1 {
+.quadro-geral h1, .artistas a {
     color: #f13239;
     font-family: transformers;
     text-shadow: 0 0 10px black;
     text-align: center;
     margin-bottom: 25px;
     padding: 0 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.artistas h1:hover {
+    text-shadow: 0 0 20px #f13239;
+    color: #e1b55e;
+    transition: 1s;
 }
 
 .quadro-geral span p {
@@ -776,6 +784,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .quadro-geral button {
@@ -789,6 +798,14 @@ footer p {
 
 .artistas .smart .foto-smart {
     width: 300px;
+    box-shadow: 0 0 30px #f13239;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.artistas .smart .foto-smart:hover {
+    box-shadow: 0 0 50px #e1b55e;
+    transition: 1s;
 }
 
 .artistas .smart .logo-smart {
@@ -803,7 +820,15 @@ footer p {
 
 .artistas .space .foto-space {
     max-width: 400px;
+    box-shadow: 0 0 30px #f13239;    
+    border-radius: 50%;
     width: 100%;
+    transition: .5s;
+}
+
+.artistas .space .foto-space:hover {
+    box-shadow: 0 0 50px #e1b55e;
+    transition: 1s;
 }
 
 .artistas .space .logo-space {
