@@ -633,7 +633,9 @@ footer p {
 }
 
 .caixa-coligado {
-    background-image: url('../images/Cimento\ 2.jpeg');    
+    background-image: url('../images/LK\ sangue.png');
+    background-position: center;
+    min-height: 500px;
     border: 2px solid #f13239;
     margin: 30px;
     padding: 10px 20px 30px 1%;
@@ -645,7 +647,7 @@ footer p {
     font-size: clamp(1em, 1em + 1vw, 2em);
     text-align: center; 
     margin-top: 10px;   
-    color: #f13239;
+    color: #e1b55e;    
     transition: .3s;
     text-shadow: 0 0 10px black;
 }
