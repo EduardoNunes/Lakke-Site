@@ -7,6 +7,6 @@ function collabf(){
         btnCollab.innerHTML = "O que é collab?";
     }else{
         maisCollab.style.display = "inline";
-        btnCollabs.innerHTML = "Já entendi";
+        btnCollab.innerHTML = "Já entendi";
     }
 }

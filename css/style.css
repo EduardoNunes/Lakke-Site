@@ -753,12 +753,38 @@ footer p {
     margin-right: auto;
 }
 
-.artistas {
+.quadro-geral h1 {
+    color: #f13239;
+    font-family: transformers;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.quadro-geral span p {
+    max-width: 600px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #e1b55e;
+    font-family: transformers;
+    text-shadow: 0 0 10px #1b1b1b;
+    padding: 0 10px;
+}
+
+.quadro-geral .artistas {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.quadro-geral button {
+    margin-left: 5%
 }
 
 .artistas .smart {
-    width: auto;
+    max-width: 310px;
+    padding: 10px;    
 }
 
 .artistas .smart .foto-smart {
@@ -767,18 +793,23 @@ footer p {
 
 .artistas .smart .logo-smart {
     width: 300px;
+    margin-top: -40px;
 }
 
 .artistas .space {
-    width: auto;
+    max-width: 450px;
+    padding: 10px;
 }
 
 .artistas .space .foto-space {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .artistas .space .logo-space {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: -40px;
 }
 
 #txtCollab{display: none}
