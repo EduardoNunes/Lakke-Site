@@ -27,8 +27,11 @@ function onYouTubeIframeAPIReady() {
         height: '200',
         width: '300',
         videoId: 'bjbVX5aVpbo',
+        playerVars: {
+            autoplay: 0
+          },
         events: {
-        'onReady': onPlayerReady,
+        //'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
         }
     });    
@@ -37,8 +40,10 @@ function onYouTubeIframeAPIReady() {
         height: '200',
         width: '300',
         videoId: 'LdzjYhwqFbg',
+        playerVars: {
+            autoplay: 0
+          },
         events: {
-        'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
         }
     });    
@@ -47,8 +52,10 @@ function onYouTubeIframeAPIReady() {
         height: '200',
         width: '300',
         videoId: 'h9EaozzlyS0',
+        playerVars: {
+            autoplay: 0
+          },
         events: {
-        'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
         }
     });   
@@ -58,8 +65,10 @@ function onYouTubeIframeAPIReady() {
         height: '200',
         width: '300',
         videoId: 'PgmjXGNFp2c',
+        playerVars: {
+            autoplay: 0
+          },
         events: {
-        'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
         }
     });  
@@ -69,16 +78,21 @@ function onYouTubeIframeAPIReady() {
         height: '200',
         width: '300',
         videoId: 'mehOsoGLjDQ',
-        events: {
-        'onReady': onPlayerReady,
+        playerVars: {
+            autoplay: 0
+          },
+        events: {        
         'onStateChange': onPlayerStateChange
         }
     }); 
 }
 
-function onPlayerReady(event) {
-    event.target.playVideo();
-    }
+
+
+//function onPlayerReady(event) {
+//    event.target.playVideo();
+//   }
+
 
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING) {
@@ -106,63 +120,3 @@ function onPlayerStateChange(event) {
         document.body.removeAttribute('data-theme');
     }
 }
-
-
-
-
-
-
-
-const button0 = document.querySelector('.tema0');
-const button1 = document.querySelector('.tema1');
-const button2 = document.querySelector('.tema2');
-const button3 = document.querySelector('.tema3');
-const button4 = document.querySelector('.tema4');
-const button5 = document.querySelector('.tema5');
-
-
-
-
-if(button0) {
-    button0.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 't-decepticons')
-    })
-}
-
-if(button1) {
-    button1.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 't-artificial-intelligence')
-    })
-}
-
-if(button2) {
-    button2.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 't-meu-nordeste')
-    })
-}
-
-if(button3) {
-    button3.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 't-eye-of-horus')
-    })
-}
-
-if(button4) {
-    button4.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 'autobots')
-    })
-}
-
-if(button5) {
-    button5.addEventListener('click', event => {
-        event.preventDefault()        
-        document.body.setAttribute('data-theme', 'follow-the-flow')
-    })
-}
-
-
