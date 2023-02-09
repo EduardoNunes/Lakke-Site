@@ -21,6 +21,7 @@ body {
     background-image: var(--img-bg);
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
+    --img-bg-spotify: url(../images/fumaça.jpg);
     transition: all 8s ease-in-out;
     background-size: cover;
     background-position: center;
@@ -29,7 +30,7 @@ body {
 
 body[data-theme="t-decepticons"] {
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
-    --img-bg-spotify: url(../images/Cimento\ 2.jpeg);
+    --img-bg-spotify: url(../images/fumaça.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     transition: all 8s ease-in-out;
 }
@@ -55,17 +56,17 @@ body[data-theme="t-eye-of-horus"] {
     transition: all 8s ease-in-out;
 }
 
-body[data-theme="autobots"] {
+body[data-theme="t-autobots"] {
     --img-bg: url(../images/autobots2\ _\ nome.jpg);
     --img-bg-spotify: url(../images/metal3.jpg);
     --color-header-footer: linear-gradient(to right, #7e7e7e, #1d1d1d);
     transition: all 8s ease-in-out;
 }
 
-body[data-theme="follow-the-flow"] {
+body[data-theme="t-follow-the-flow"] {
     --img-bg: url(../images/capa\ follow\ the\ flow.jpg);
     --img-bg-spotify: url(../images/crepusculo2.jpg);
-    --color-header-footer: linear-gradient(to right, #ff92a4, #6d2b7a);
+    --color-header-footer: linear-gradient(to right, #fffd8c, #6d2b7a);
     transition: all 8s ease-in-out;
 }
 
@@ -280,7 +281,7 @@ li.slick-active button {
     display: none;
 }
 
-.gallery {
+.gallery {   
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
@@ -313,11 +314,11 @@ li.slick-active button {
     line-height: 250px;
     width: 40px;
     text-align: center;
-    color: #e1b55e;
+    color: #f13239;
     cursor: pointer;
     border: none;
     background: linear-gradient(to left, transparent 0%, #f13239 300%);
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 400ms ease-in-out;
 }
 
@@ -331,7 +332,7 @@ li.slick-active button {
 .arrow-right:hover {
     width: 50px;
     font-size: 40px;
-    color: #f13239;
+    color: #e1b55e;
     opacity: 1;
 }
 
@@ -404,12 +405,12 @@ section {
     width: 100%;
     max-width: 350px;
     border-radius: 50%;
-    box-shadow: 0 0 19px #f13239;
+    box-shadow: 0 0 40px #f13239;
     transition: 0.3s;    
 }
 
 .imagem-lakke img:hover {
-    box-shadow: 0 0 40px #e1b55e;    
+    box-shadow: 0 0 50px #e1b55e;    
     transition: 1s;
     cursor: pointer;
 }
@@ -464,14 +465,14 @@ section {
     max-width: 200px;       
     transition: 0.3s;
     border-radius: 50%;
-    box-shadow: 0 0 15px #f13239;
+    box-shadow: 0 0 25px #e1b55e;
     margin-top: 10px;  
 }
 
 .logo-apoiadores img:hover {
     width: 95%;
     transition: 0.3s;
-    box-shadow: 0 0 60px #e1b55e;    
+    box-shadow: 0 0 60px #f13239;    
 }
 
 footer {
