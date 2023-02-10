@@ -8,9 +8,11 @@ $('.slider-principal').slick({
     autoplaySpeed: 3000
     });
 
-const controls = document.querySelectorAll('.control');
+
+const controls = document.querySelectorAll('.arrow-control');
 let currentItem = 0;
-const items = document.querySelectorAll('.item');
+let items = document.querySelectorAll('.item');
+let items2 = document.querySelectorAll('.item2');
 const maxItems = items.length;
 
 controls.forEach((control) => {
@@ -18,7 +20,7 @@ controls.forEach((control) => {
         const isLeft = control.classList.contains("arrow-left");
         
         if (isLeft) {
-            currentItem -= 1;
+            currentItem -= 1;                     
         }else {
             currentItem += 1;
         }
@@ -32,14 +34,22 @@ controls.forEach((control) => {
         }        
 
         items.forEach(item => item.classList.remove('current-item'));
+        items2.forEach(item2 => item2.classList.remove('current-item2'));
 
         items[currentItem].scrollIntoView({
             behavior: "center",
             block: "nearest",
             behavior: "smooth",
-        });    
+        });
+
+        items2[currentItem].scrollIntoView({
+            behavior: "center",
+            block: "nearest",
+            behavior: "smooth",
+        });
         
-        items[currentItem].classList.add("current-item");        
+        items[currentItem].classList.add("current-item");
+        items2[currentItem].classList.add("current-item2");  
     });
 });
 

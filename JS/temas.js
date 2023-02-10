@@ -14,79 +14,79 @@ function searchVideos(keyword) {
     });
   }
 
-//vídeo 5 Follow the Flow ______________________________________________
 let player5;
 let player4;
 let player3;
 let player2;
 let player1;
 
+
+
 function onYouTubeIframeAPIReady() {    
     
-    player5 = new YT.Player('player5', {
-        height: '200',
-        width: '300',
-        videoId: 'bjbVX5aVpbo',
-        playerVars: {
-            autoplay: 0
-          },
-        events: {
-        //'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-        }
-    });    
+  player5 = new YT.Player('player5', {
+      height: '200',
+      width: '300',
+      videoId: 'bjbVX5aVpbo',
+      playerVars: {
+          autoplay: 0
+        },
+      events: {
+      //'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+      }
+  });    
 
-    player4 = new YT.Player('player4', {
-        height: '200',
-        width: '300',
-        videoId: 'LdzjYhwqFbg',
-        playerVars: {
-            autoplay: 0
-          },
-        events: {
-        'onStateChange': onPlayerStateChange
-        }
-    });    
-    
-    player3 = new YT.Player('player3', {
-        height: '200',
-        width: '300',
-        videoId: 'h9EaozzlyS0',
-        playerVars: {
-            autoplay: 0
-          },
-        events: {
-        'onStateChange': onPlayerStateChange
-        }
-    });   
-    
+  player4 = new YT.Player('player4', {
+      height: '200',
+      width: '300',
+      videoId: 'LdzjYhwqFbg',
+      playerVars: {
+          autoplay: 0
+        },
+      events: {
+      'onStateChange': onPlayerStateChange
+      }
+  });    
+  
+  player3 = new YT.Player('player3', {
+      height: '200',
+      width: '300',
+      videoId: 'h9EaozzlyS0',
+      playerVars: {
+          autoplay: 0
+        },
+      events: {
+      'onStateChange': onPlayerStateChange
+      }
+  });   
+  
 
-    player2 = new YT.Player('player2', {
-        height: '200',
-        width: '300',
-        videoId: 'PgmjXGNFp2c',
-        playerVars: {
-            autoplay: 0
-          },
-        events: {
-        'onStateChange': onPlayerStateChange
-        }
-    });  
-    
+  player2 = new YT.Player('player2', {
+      height: '200',
+      width: '300',
+      videoId: 'PgmjXGNFp2c',
+      playerVars: {
+          autoplay: 0
+        },
+      events: {
+      'onStateChange': onPlayerStateChange
+      }
+  });  
+  
 
-    player1 = new YT.Player('player1', {
-        height: '200',
-        width: '300',
-        videoId: 'mehOsoGLjDQ',
-        playerVars: {
-            autoplay: 0
-          },
-        events: {        
-        'onStateChange': onPlayerStateChange
-        }
-    }); 
+  player1 = new YT.Player('player1', {
+      height: '200',
+      width: '300',
+      videoId: 'mehOsoGLjDQ',
+      playerVars: {
+          autoplay: 0
+        },
+      events: {        
+      'onStateChange': onPlayerStateChange
+      }
+  }); 
 }
-
 
 
 //function onPlayerReady(event) {

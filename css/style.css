@@ -264,19 +264,6 @@ li.slick-active button {
     overflow-x: auto;
 }
 
-.gallery-wrapper button {
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    background-color: #1b1b1b;
-    border: none;
-    transition: all .5s ease-in-out;
-}
-
-.gallery-wrapper button:hover {
-    background-color: #e1b55e;
-}
-
 .gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
@@ -285,20 +272,27 @@ li.slick-active button {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
-    height: 250px;
+    height: 200px;
 }
 
-.item {
-    min-width: 260px;
+.gallery1, .gallery2 {   
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    height: 10px;
+}
+
+.gallery1 .item, .item2 {
+    min-width: 300px;
     width: 400px;
     border-radius: 16px;
-    height: 200px;
+    height: 5px;
     border: 3px solid #f13239;
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
-.current-item {
+.gallery1 .current-item, .current-item2 {
     border: 5px solid #e1b55e;
     box-shadow: 0 0 10px #f13239;
 }
