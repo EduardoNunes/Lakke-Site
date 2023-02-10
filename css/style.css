@@ -6,18 +6,44 @@
 
 h1 {
     font-style: normal;
-
 }
 
+
 @font-face {
-    font-family: transformers;
-    src: url(../Transformers\ Movie.ttf);
-    font-weight: normal;
-    font-size: normal;
+    font-family: 'Transformers Movie';     
+    src: url(../Fontes/Transformers\ Movie.ttf);
+}
+
+@font-face {    
+    font-family: 'Dancing Script';     
+    src: url(../Fontes/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {    
+    font-family: 'Egyptian Letterss';     
+    src: url(../Fontes/Egyptian\ Letters.ttf);
+}
+
+@font-face {    
+    font-family: 'Galdino Outline';     
+    src: url(../Fontes/Xilo\ Galdino\ Outline.ttf);
+}
+
+@font-face {    
+    font-family: 'space age';     
+    src: url(../Fontes/space\ age.ttf);
+}
+
+:root {
+    --font-tipo-1: 'Transformers Movie', 'cursive';
+    --font-tipo-2: 'Dancing Script', 'cursive';
+    --font-tipo-3: 'Egyptian Letterss', 'cursive';
+    --font-tipo-4: 'Galdino Outline', 'cursive';
+    --font-tipo-5: 'space age', 'cursive';
+    --font-escolha: var(--font-tipo-1);
 }
 
 body {
-    font-family: sans-serif;
     background-image: var(--img-bg);
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
@@ -29,6 +55,7 @@ body {
 }
 
 body[data-theme="t-decepticons"] {
+    --font-escolha: var(--font-tipo-1);
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --img-bg-spotify: url(../images/fumaça.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
@@ -36,6 +63,7 @@ body[data-theme="t-decepticons"] {
 }
 
 body[data-theme="t-artificial-intelligence"] {
+    --font-escolha: var(--font-tipo-5);
     --img-bg: url(../images/capa\ artificial\ intelligence.jpg);
     --img-bg-spotify: url(../images/space1.jpg);
     --color-header-footer: linear-gradient(to right, #7391ff, #080038);
@@ -43,6 +71,7 @@ body[data-theme="t-artificial-intelligence"] {
 }
 
 body[data-theme="t-meu-nordeste"] {
+    --font-escolha: var(--font-tipo-4);
     --img-bg: url(../images/capa\ meu\ nordeste.jpg);
     --img-bg-spotify: url(../images/caatinga.jpg);
     --color-header-footer: linear-gradient(to right, rgb(168, 113, 77), #5f2c09);
@@ -50,6 +79,7 @@ body[data-theme="t-meu-nordeste"] {
 }
 
 body[data-theme="t-eye-of-horus"] {
+    --font-escolha: var(--font-tipo-3);
     --img-bg: url(../images/capa\ olho\ de\ horus.jpg);
     --img-bg-spotify: url(../images/Areia\ noite.jpg);
     --color-header-footer: linear-gradient(to right, #595d64, #2c2b3d);
@@ -57,6 +87,7 @@ body[data-theme="t-eye-of-horus"] {
 }
 
 body[data-theme="t-autobots"] {
+    --font-escolha: var(--font-tipo-1);
     --img-bg: url(../images/autobots2\ _\ nome.jpg);
     --img-bg-spotify: url(../images/metal3.jpg);
     --color-header-footer: linear-gradient(to right, #7e7e7e, #1d1d1d);
@@ -64,6 +95,8 @@ body[data-theme="t-autobots"] {
 }
 
 body[data-theme="t-follow-the-flow"] {
+    --font-escolha: var(--font-tipo-2);
+    --font-tipo: url(../Fontes/GreatVibes-Regular.ttf);
     --img-bg: url(../images/capa\ follow\ the\ flow.jpg);
     --img-bg-spotify: url(../images/crepusculo2.jpg);
     --color-header-footer: linear-gradient(to right, #fffd8c, #6d2b7a);
@@ -131,12 +164,12 @@ header ul li + li {
 }
 
 header a {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: 18px;
     text-shadow: 1px 1px black;
     color: #f13239;
     text-decoration: none;
-    transition: color 0.2s;  
+    transition: color 0.2s;
 }
 
 header a:hover {
@@ -229,7 +262,7 @@ li.slick-active button {
 }
 
 .container h2 {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-shadow: 1px 1px rgb(0, 0, 0);
     font-size: clamp(1.5em, 1em + 1vw, 1.5em);
     margin-top: 45px;
@@ -240,7 +273,7 @@ li.slick-active button {
 }
 
 .container h3 {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-shadow: 1px 1px black;
     font-size: clamp(1em, 1em + 1vw, 1.5em);   
     margin-bottom: 40px;
@@ -275,26 +308,32 @@ li.slick-active button {
     height: 200px;
 }
 
+.gallery .video:hover {
+    border-radius: 3px;
+    box-shadow: 0 0 20px #fbefe1;
+    transition: all .3s ease-in-out;
+}
+
 .gallery1, .gallery2 {   
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
-    height: 10px;
+    height: 5px;
 }
 
-.gallery1 .item, .item2 {
+.gallery1 .item,.gallery2 .item2 {
+    background-color: #f13239;
     min-width: 300px;
-    width: 400px;
-    border-radius: 16px;
-    height: 5px;
+    width: 100%;
+    height: 3px;
     border: 3px solid #f13239;
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
-.gallery1 .current-item, .current-item2 {
-    border: 5px solid #e1b55e;
-    box-shadow: 0 0 10px #f13239;
+.gallery1 .current-item,.gallery2 .current-item2 {
+    background-color: #e1b55e;
+    border: 3px solid #e1b55e;
 }
 
 .arrow-left,
@@ -379,7 +418,7 @@ section {
 .logo-spotify h3 {
     color: #f13239;
     text-shadow: 1px 1px black;
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 1.7em);
     transition: 0.3s;
 }
@@ -431,7 +470,7 @@ section {
 .apoio {
     text-align: left;
     width: 100%;    
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-shadow: 1px 1px rgb(0, 0, 0);    
     padding-left: 8px;
     color: #f13239;
@@ -459,14 +498,14 @@ section {
     max-width: 200px;       
     transition: 0.3s;
     border-radius: 50%;
-    box-shadow: 0 0 25px #e1b55e;
+    box-shadow: 0 0 25px #f13239;
     margin-top: 10px;  
 }
 
 .logo-apoiadores img:hover {
     width: 95%;
     transition: 0.3s;
-    box-shadow: 0 0 60px #f13239;    
+    box-shadow: 0 0 60px #e1b55e;    
 }
 
 footer {
@@ -479,7 +518,7 @@ footer {
 }
 
 footer p {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: 18px;
     color: #f13239;
     text-shadow: 1px 1px black;
@@ -555,7 +594,7 @@ footer p {
 }
 
 .topic-box {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: 20px;
     color: #b0b0b0;
     text-shadow: #e1b55e;
@@ -594,7 +633,7 @@ footer p {
 .caixa .button button {
     width: 90px;
     height: 30px;
-    font-family: transformers;
+    font-family: var(--font-escolha);
     margin-bottom: 15px;
     cursor: pointer;
     background-color: #1b1b1b;
@@ -644,7 +683,7 @@ footer p {
 
 .obrigado h1, h2, h3 {    
     font-size: clamp(1em, 1em + 1vw, 2em);   
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-decoration: none;
     color: #f13239;
     text-shadow: 1px 1px black;
@@ -666,7 +705,7 @@ footer p {
 .texto a {
     width: 100%;
     font-size: clamp(1em, 0.5em + 1vw, 1.5em);   
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-decoration: none;
     color: #f13239;
     text-shadow: 1px 1px black;
@@ -707,7 +746,7 @@ footer p {
 }
 
 .coligado h1 {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 2em);
     text-align: center; 
     margin-top: 10px;   
@@ -717,7 +756,7 @@ footer p {
 }
 
 .coligado h4 {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     margin-top: 10px 0;
     font-size: clamp(10px, 1em + 1vw, 1.5em);
     color: #e1b55e;
@@ -725,7 +764,7 @@ footer p {
 }
 
 .coligado p {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 1.2em);
     color: #f13239;
     text-shadow: 0 0 10px black;
@@ -733,7 +772,7 @@ footer p {
 }
 
 .coligado h5 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-escolha);
     margin-left: 7%;
     color: antiquewhite;
     text-shadow: 0 0 10px #1b1b1b;
@@ -744,7 +783,7 @@ footer p {
 }
 
 .coligado h6 {
-    font-family: transformers;
+    font-family: var(--font-escolha);
     margin-left: 40px;
     color: #b0b0b0;
     text-shadow: 0 0 10px #1b1b1b;
@@ -761,7 +800,7 @@ footer p {
     padding: 2px 5px;
     background-color: black;
     color: #fbefe1;    
-    font-family: transformers;
+    font-family: var(--font-escolha);
     transition: .3s;
     margin: 5px 0;    
 }
@@ -770,7 +809,7 @@ footer p {
     border: 2px solid #1b1b1b;
     background-color: #e1b55e;
     color: #1b1b1b;    
-    font-family: transformers;
+    font-family: var(--font-escolha);
     transition: .3s;
     box-shadow: 0 0 10px #f13239;
 }
@@ -821,7 +860,7 @@ footer p {
 
 .quadro-geral h1, .artistas a {
     color: #f13239;
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-shadow: 0 0 10px black;
     text-align: center;
     margin-bottom: 25px;
@@ -841,7 +880,7 @@ footer p {
     margin-left: 10px;
     margin-bottom: 10px;
     color: #e1b55e;
-    font-family: transformers;
+    font-family: var(--font-escolha);
     text-shadow: 0 0 10px #1b1b1b;
     padding: 0 10px;
 }
