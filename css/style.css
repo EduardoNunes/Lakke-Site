@@ -45,6 +45,7 @@ h1 {
 
 body {
     background-image: var(--img-bg);
+    --img-logo: url(../images/LK\ sangue.png);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
@@ -57,6 +58,7 @@ body {
 }
 
 body[data-theme="t-decepticons"] {
+    --img-logo: url(../images/LK\ sangue.png);
     --font-escolha: var(--font-tipo-1);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
@@ -67,6 +69,7 @@ body[data-theme="t-decepticons"] {
 }
 
 body[data-theme="t-artificial-intelligence"] {
+    --img-logo: url(../images/Lk\ azul1.png);
     --font-escolha: var(--font-tipo-5);
     --collor-font: #00bbff;
     --collor-fontHover: #9138ff;
@@ -77,6 +80,7 @@ body[data-theme="t-artificial-intelligence"] {
 }
 
 body[data-theme="t-meu-nordeste"] {
+    --img-logo: url(../images/Lk\ marrom.png);
     --font-escolha: var(--font-tipo-4);
     --collor-font: #10940b;
     --collor-fontHover: #963700;
@@ -87,6 +91,7 @@ body[data-theme="t-meu-nordeste"] {
 }
 
 body[data-theme="t-eye-of-horus"] {
+    --img-logo: url(../images/LK\ gold.png);
     --font-escolha: var(--font-tipo-3);
     --collor-font: #ffbb00;
     --collor-fontHover: #fffc40;
@@ -97,6 +102,7 @@ body[data-theme="t-eye-of-horus"] {
 }
 
 body[data-theme="t-autobots"] {
+    --img-logo: url(../images/LK\ prata.png);
     --font-escolha: var(--font-tipo-1);
     --collor-font: #0cb1f8;
     --collor-fontHover: #acaa3a;
@@ -107,6 +113,7 @@ body[data-theme="t-autobots"] {
 }
 
 body[data-theme="t-follow-the-flow"] {
+    --img-logo: url(../images/LK\ verde.png);
     --font-escolha: var(--font-tipo-2);
     --collor-font: #099b1f;
     --collor-fontHover: #ec6767;
@@ -137,15 +144,18 @@ header .logo .tema0 {
     border: none;
 }
 
-header .logo img {
-    margin-top: 5px;
+header .logo {
+    background-image: var(--img-logo);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 90px;
-    border-radius: 15px;
-    transition: .3s;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
-header .logo img:hover {
-    box-shadow: 0 0 10px var(--collor-fontHover);
+header .logo:hover {
+    box-shadow: 0 0 10px 5px var(--collor-font);
     transition: .3s;
 }
 
