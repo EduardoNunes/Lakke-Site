@@ -25,8 +25,8 @@ h1 {
 }
 
 @font-face {    
-    font-family: 'Galdino Outline';     
-    src: url(../Fontes/Xilo\ Galdino\ Outline.ttf);
+    font-family: 'xilosa';     
+    src: url(../Fontes/xilosa_.ttf);
 }
 
 @font-face {    
@@ -38,13 +38,15 @@ h1 {
     --font-tipo-1: 'Transformers Movie', 'cursive';
     --font-tipo-2: 'Dancing Script', 'cursive';
     --font-tipo-3: 'Egyptian Letterss', 'cursive';
-    --font-tipo-4: 'Galdino Outline', 'cursive';
+    --font-tipo-4: 'xilosa', 'cursive';
     --font-tipo-5: 'space age', 'cursive';
     --font-escolha: var(--font-tipo-1);
 }
 
 body {
     background-image: var(--img-bg);
+    --collor-font: #f13239;
+    --collor-fontHover: #e1b55e;
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     --img-bg-spotify: url(../images/fumaça.jpg);
@@ -56,6 +58,8 @@ body {
 
 body[data-theme="t-decepticons"] {
     --font-escolha: var(--font-tipo-1);
+    --collor-font: #f13239;
+    --collor-fontHover: #e1b55e;
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --img-bg-spotify: url(../images/fumaça.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
@@ -64,14 +68,18 @@ body[data-theme="t-decepticons"] {
 
 body[data-theme="t-artificial-intelligence"] {
     --font-escolha: var(--font-tipo-5);
+    --collor-font: #00bbff;
+    --collor-fontHover: #9138ff;
     --img-bg: url(../images/capa\ artificial\ intelligence.jpg);
     --img-bg-spotify: url(../images/space1.jpg);
-    --color-header-footer: linear-gradient(to right, #7391ff, #080038);
+    --color-header-footer: linear-gradient(to right, #7391ffec, #080038e9);
     transition: all 8s ease-in-out;
 }
 
 body[data-theme="t-meu-nordeste"] {
     --font-escolha: var(--font-tipo-4);
+    --collor-font: #10940b;
+    --collor-fontHover: #963700;
     --img-bg: url(../images/capa\ meu\ nordeste.jpg);
     --img-bg-spotify: url(../images/caatinga.jpg);
     --color-header-footer: linear-gradient(to right, rgb(168, 113, 77), #5f2c09);
@@ -80,33 +88,39 @@ body[data-theme="t-meu-nordeste"] {
 
 body[data-theme="t-eye-of-horus"] {
     --font-escolha: var(--font-tipo-3);
+    --collor-font: #ffbb00;
+    --collor-fontHover: #fffc40;
     --img-bg: url(../images/capa\ olho\ de\ horus.jpg);
     --img-bg-spotify: url(../images/Areia\ noite.jpg);
-    --color-header-footer: linear-gradient(to right, #595d64, #2c2b3d);
+    --color-header-footer: linear-gradient(to right, #595d64e7, #ffbb00cf);
     transition: all 8s ease-in-out;
 }
 
 body[data-theme="t-autobots"] {
     --font-escolha: var(--font-tipo-1);
+    --collor-font: #0cb1f8;
+    --collor-fontHover: #acaa3a;
     --img-bg: url(../images/autobots2\ _\ nome.jpg);
-    --img-bg-spotify: url(../images/metal3.jpg);
-    --color-header-footer: linear-gradient(to right, #7e7e7e, #1d1d1d);
+    --img-bg-spotify: url(../images/Optimus7.png);
+    --color-header-footer: linear-gradient(to right, #acaa3ad2, #0cb1f8d7);
     transition: all 8s ease-in-out;
 }
 
 body[data-theme="t-follow-the-flow"] {
     --font-escolha: var(--font-tipo-2);
+    --collor-font: #099b1f;
+    --collor-fontHover: #ec6767;
     --font-tipo: url(../Fontes/GreatVibes-Regular.ttf);
     --img-bg: url(../images/capa\ follow\ the\ flow.jpg);
     --img-bg-spotify: url(../images/crepusculo2.jpg);
-    --color-header-footer: linear-gradient(to right, #fffd8c, #6d2b7a);
+    --color-header-footer: linear-gradient(to right, #fffd8c, #7a2b4a);
     transition: all 8s ease-in-out;
 }
 
 header {
     background: var(--color-header-footer);
     transition: all 8s ease-in-out;
-    border-bottom: 2px solid #f13239;    
+    border-bottom: 2px solid var(--collor-font);    
 }
 
 header .centro {
@@ -131,7 +145,7 @@ header .logo img {
 }
 
 header .logo img:hover {
-    box-shadow: 0 0 10px #612a2d;
+    box-shadow: 0 0 10px var(--collor-fontHover);
     transition: .3s;
 }
 
@@ -167,20 +181,20 @@ header a {
     font-family: var(--font-escolha);
     font-size: 18px;
     text-shadow: 1px 1px black;
-    color: #f13239;
+    color: var(--collor-font);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 header a:hover {
-    color: #e1b55e;
+    color: var(--collor-fontHover);
 }
 
 .banner {
     height: 400px;
     max-width: max-content;
     display: flex;
-    border-bottom: 1px solid #f13239;
+    border-bottom: 1px solid var(--collor-font);
 }
 
 .banner img{
@@ -223,7 +237,7 @@ button.slick-next {
 
 .slick-dots li button {
     font-size: 0px;
-    border: 2px solid #fbefe1;
+    border: 2px solid var(--collor-font);
     width: 20px;
     height: 20px;
     background: transparent;
@@ -239,7 +253,7 @@ button.slick-next {
 }
 
 li.slick-active button {
-    background: #f13239;
+    background: var(--collor-fontHover);
 }
 
 .slick-dots li {    
@@ -268,8 +282,12 @@ li.slick-active button {
     margin-top: 45px;
     margin-bottom: 2px;
     padding-left: 8px;
-    color: #f13239;
-    border-left: 4px solid #e1b55e;    
+    color: var(--collor-font);
+    border-left: 4px solid var(--collor-fontHover);    
+}
+
+.container a {    
+    text-decoration: none;
 }
 
 .container h3 {
@@ -278,19 +296,15 @@ li.slick-active button {
     font-size: clamp(1em, 1em + 1vw, 1.5em);   
     margin-bottom: 40px;
     padding-left: 8px;
-    color: #f13239;
-    border-left: 4px solid #e1b55e;
+    color: var(--collor-font);
+    border-left: 4px solid var(--collor-fontHover);
     transition: 0.5s;
-}
-
-.container a {
-    text-decoration: none;
 }
 
 .container h3:hover {
-    color: #e1b55e;
+    color: var(--collor-fontHover);
     transition: 0.5s;
-    text-shadow: 0 0 10px #f13239;    
+    text-shadow: 0 0 10px var(--collor-font);    
 }
 
 .gallery-wrapper {
@@ -310,7 +324,7 @@ li.slick-active button {
 
 .gallery .video:hover {
     border-radius: 3px;
-    box-shadow: 0 0 20px #fbefe1;
+    box-shadow: 0 0 10px 7px var(--collor-fontHover);
     transition: all .3s ease-in-out;
 }
 
@@ -322,18 +336,16 @@ li.slick-active button {
 }
 
 .gallery1 .item,.gallery2 .item2 {
-    background-color: #f13239;
     min-width: 300px;
     width: 100%;
     height: 3px;
-    border: 3px solid #f13239;
+    border: 3px solid var(--collor-font);
     border-radius: 8px;
     transition: all 300ms ease-in-out;
 }
 
 .gallery1 .current-item,.gallery2 .current-item2 {
-    background-color: #e1b55e;
-    border: 3px solid #e1b55e;
+    border: 3px solid var(--collor-fontHover);
 }
 
 .arrow-left,
@@ -347,10 +359,10 @@ li.slick-active button {
     line-height: 250px;
     width: 40px;
     text-align: center;
-    color: #f13239;
+    color: var(--collor-font);
     cursor: pointer;
     border: none;
-    background: linear-gradient(to left, transparent 0%, #f13239 300%);
+    background: linear-gradient(to left, transparent 0%, var(--collor-font) 300%);
     opacity: 0.8;
     transition: all 400ms ease-in-out;
 }
@@ -358,14 +370,14 @@ li.slick-active button {
 .arrow-right {    
     left: auto;
     right: 0;    
-    background: linear-gradient(to right, transparent 0%, #f13239 300%);    
+    background: linear-gradient(to right, transparent 0%, var(--collor-font) 300%);    
 }
 
 .arrow-left:hover,
 .arrow-right:hover {
     width: 50px;
     font-size: 40px;
-    color: #e1b55e;
+    color: var(--collor-fontHover);
     opacity: 1;
 }
 
@@ -377,8 +389,8 @@ section {
     background-position: center;
     left: auto;
     right: auto;
-    border-top: 1px solid #f13239;
-    border-bottom: 1px solid #f13239;
+    border-top: 1px solid var(--collor-font);
+    border-bottom: 1px solid var(--collor-font);
     padding-top: 40px;
     transition: all 8s ease-in-out;
 }
@@ -416,7 +428,7 @@ section {
 }
 
 .logo-spotify h3 {
-    color: #f13239;
+    color: var(--collor-font);
     text-shadow: 1px 1px black;
     font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 1.7em);
@@ -425,9 +437,9 @@ section {
 
 .logo-spotify h3:hover {
     cursor: pointer;
-    color: #e1b55e;
+    color: var(--collor-fontHover);
     transition: 0.3s;
-    text-shadow: 0 0 10px #f13239;
+    text-shadow: 0 0 10px var(--collor-font);
 }
 
 .logo-spotify a {
@@ -438,12 +450,12 @@ section {
     width: 100%;
     max-width: 350px;
     border-radius: 50%;
-    box-shadow: 0 0 40px #f13239;
+    box-shadow: 0 0 40px var(--collor-font);
     transition: 0.3s;    
 }
 
 .imagem-lakke img:hover {
-    box-shadow: 0 0 50px #e1b55e;    
+    box-shadow: 0 0 50px 7px var(--collor-fontHover);    
     transition: 1s;
     cursor: pointer;
 }
@@ -473,7 +485,7 @@ section {
     font-family: var(--font-escolha);
     text-shadow: 1px 1px rgb(0, 0, 0);    
     padding-left: 8px;
-    color: #f13239;
+    color: var(--collor-font);
     border-left: 4px solid #e1b55e;
     height: 30px;
 }
@@ -498,19 +510,19 @@ section {
     max-width: 200px;       
     transition: 0.3s;
     border-radius: 50%;
-    box-shadow: 0 0 25px #f13239;
+    box-shadow: 0 0 25px 5px var(--collor-font);
     margin-top: 10px;  
 }
 
 .logo-apoiadores img:hover {
     width: 95%;
     transition: 0.3s;
-    box-shadow: 0 0 60px #e1b55e;    
+    box-shadow: 0 0 25px 10px var(--collor-fontHover);    
 }
 
 footer {
     background: var(--color-header-footer);
-    border-top: 2px solid #f13239;
+    border-top: 2px solid var(--collor-font);
     padding: 64px 0 0 0;
     text-align: center;
     height: 180px;
@@ -520,7 +532,7 @@ footer {
 footer p {
     font-family: var(--font-escolha);
     font-size: 18px;
-    color: #f13239;
+    color: var(--collor-font);
     text-shadow: 1px 1px black;
 }
 
@@ -554,19 +566,19 @@ footer p {
 
 .imagem-lakke2 img {
     width: 100%;
-    box-shadow: 0 0 10px #f13239;
+    box-shadow: 0 0 30px #f13239;
     border-radius: 50%;
     transition: .3s;
 }
 
 .imagem-lakke2 img:hover {
-    box-shadow: 0 0 30px #e1b55e;
+    box-shadow: 0 0 50px var(--collor-fontHover);
     transition: 2s;
 }
 
 .contato {
     background-image: url('../images/Cimento\ 2.jpeg');
-    border: 2px solid #f13239;
+    border: 2px solid var(--collor-font);
     background-size: auto;
     background-position: 10%;
     display: flex;
@@ -596,8 +608,8 @@ footer p {
 .topic-box {
     font-family: var(--font-escolha);
     font-size: 20px;
-    color: #b0b0b0;
-    text-shadow: #e1b55e;
+    color: var(--collor-font);
+    text-shadow: var(--collor-fontHover);
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -637,9 +649,9 @@ footer p {
     margin-bottom: 15px;
     cursor: pointer;
     background-color: #1b1b1b;
-    border: 3px solid #f13239;
+    border: 3px solid var(--collor-font);
     border-radius: 8px;
-    color: rgb(255, 255, 255);
+    color: var(--collor-font);
     font-style: bold;
     transition: .5s;
     text-shadow: 1px 1px #1b1b1b;
@@ -650,8 +662,8 @@ footer p {
     background-color: #e1b55e;
     border: 3px solid #1b1b1b;
     text-shadow: 1px 1px #b0b0b0;
-    box-shadow: 0 0 10px #f13239;
-    color: #1b1b1b;
+    box-shadow: 0 0 10px var(--collor-font);
+    color: var(--collor-fontHover);;
     transition: .5s;
     font-weight: bold;
 }
@@ -674,7 +686,7 @@ footer p {
     max-width: 1200px;
     background-image: url('../images/Cimento\ 2.jpeg');
     opacity: 87%;
-    border: 2px solid #f13239;
+    border: 2px solid var(--collor-font);
     border-radius: 8px;
     padding: 30px;
     margin-left: auto;
@@ -685,13 +697,13 @@ footer p {
     font-size: clamp(1em, 1em + 1vw, 2em);   
     font-family: var(--font-escolha);
     text-decoration: none;
-    color: #f13239;
+    color: var(--collor-font);
     text-shadow: 1px 1px black;
     transition: .3s;
 }
 
 .texto {
-    border: 2px solid #f13239;
+    border: 2px solid var(--collor-font);
     background-color: black;
     border-radius: 8px;
     width: 29%;
@@ -707,20 +719,20 @@ footer p {
     font-size: clamp(1em, 0.5em + 1vw, 1.5em);   
     font-family: var(--font-escolha);
     text-decoration: none;
-    color: #f13239;
+    color: var(--collor-font);
     text-shadow: 1px 1px black;
     transition: .3s;
 }
 
 .obrigado a:hover {
-    color: #e1b55e;
+    color: var(--collor-fontHover);;
     transition: .3s;
 }
 
 .obrigado .texto:hover {
     border: 2px solid #e1b55e;
     transition: .3s;
-    box-shadow: 0 0 15px #f13239;
+    box-shadow: 0 0 15px var(--collor-font);
 }
 
 /* BUSINESS Page 4 _______________________________________________________________*/
@@ -739,7 +751,7 @@ footer p {
     background-size: 50%;
     background-repeat: no-repeat;
     min-height: 500px;
-    border: 2px solid #f13239;
+    border: 2px solid var(--collor-font);
     margin: 30px;
     padding: 10px 20px 30px 1%;
     border-radius: 10px;    
@@ -750,7 +762,7 @@ footer p {
     font-size: clamp(1em, 1em + 1vw, 2em);
     text-align: center; 
     margin-top: 10px;   
-    color: #e1b55e;    
+    color: var(--collor-font);
     transition: .3s;
     text-shadow: 0 0 10px #f13239;
 }
@@ -759,14 +771,14 @@ footer p {
     font-family: var(--font-escolha);
     margin-top: 10px 0;
     font-size: clamp(10px, 1em + 1vw, 1.5em);
-    color: #e1b55e;
+    color: var(--collor-font);
     text-shadow: 0 0 10px black;
 }
 
 .coligado p {
     font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 1.2em);
-    color: #f13239;
+    color: var(--collor-font);
     text-shadow: 0 0 10px black;
     margin: 5px 5%;
 }
@@ -774,7 +786,7 @@ footer p {
 .coligado h5 {
     font-family: var(--font-escolha);
     margin-left: 7%;
-    color: antiquewhite;
+    color: var(--collor-font);
     text-shadow: 0 0 10px #1b1b1b;
 }
 
@@ -785,7 +797,7 @@ footer p {
 .coligado h6 {
     font-family: var(--font-escolha);
     margin-left: 40px;
-    color: #b0b0b0;
+    color: var(--collor-font);
     text-shadow: 0 0 10px #1b1b1b;
 }
 
@@ -795,11 +807,11 @@ footer p {
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #f13239;
+    border: 2px solid var(--collor-font);
     border-radius: 5px;
     padding: 2px 5px;
     background-color: black;
-    color: #fbefe1;    
+    color: var(--collor-font);    
     font-family: var(--font-escolha);
     transition: .3s;
     margin: 5px 0;    
@@ -807,11 +819,11 @@ footer p {
 
 .caixa-coligado .button:hover,.caixa-coligado button:hover, .quadro-geral button:hover  {
     border: 2px solid #1b1b1b;
-    background-color: #e1b55e;
-    color: #1b1b1b;    
+    background-color: var(--collor-fontHover);
+    color: var(--collor-font);    
     font-family: var(--font-escolha);
     transition: .3s;
-    box-shadow: 0 0 10px #f13239;
+    box-shadow: 0 0 10px var(--collor-font);
 }
 
 .caixa-coligado .subtitle {
@@ -820,8 +832,8 @@ footer p {
 }
 
 .caixa-coligado .subtitle:hover {
-    color: #e1b55e;
-    text-shadow: 0 0 10px #e1b55e;
+    color: var(--collor-fontHover);;
+    text-shadow: 0 0 10px var(--collor-fontHover);
 }
 
 .caixa-coligado .button {
@@ -859,7 +871,7 @@ footer p {
 }
 
 .quadro-geral h1, .artistas a {
-    color: #f13239;
+    color: var(--collor-font);
     font-family: var(--font-escolha);
     text-shadow: 0 0 10px black;
     text-align: center;
@@ -870,8 +882,8 @@ footer p {
 }
 
 .artistas h1:hover {
-    text-shadow: 0 0 20px #f13239;
-    color: #e1b55e;
+    text-shadow: 0 0 20px var(--collor-font);
+    color: var(--collor-fontHover);;
     transition: 1s;
 }
 
@@ -879,7 +891,7 @@ footer p {
     max-width: 600px;
     margin-left: 10px;
     margin-bottom: 10px;
-    color: #e1b55e;
+    color: var(--collor-font);
     font-family: var(--font-escolha);
     text-shadow: 0 0 10px #1b1b1b;
     padding: 0 10px;
@@ -903,13 +915,13 @@ footer p {
 
 .artistas .smart .foto-smart {
     width: 300px;
-    box-shadow: 0 0 30px #f13239;
+    box-shadow: 0 0 30px var(--collor-font);
     border-radius: 50%;
     transition: .5s;
 }
 
 .artistas .smart .foto-smart:hover {
-    box-shadow: 0 0 50px #e1b55e;
+    box-shadow: 0 0 50px var(--collor-fontHover);
     transition: 1s;
 }
 
@@ -925,14 +937,14 @@ footer p {
 
 .artistas .space .foto-space {
     max-width: 400px;
-    box-shadow: 0 0 30px #f13239;    
+    box-shadow: 0 0 30px var(--collor-font);    
     border-radius: 50%;
     width: 100%;
     transition: .5s;
 }
 
 .artistas .space .foto-space:hover {
-    box-shadow: 0 0 50px #e1b55e;
+    box-shadow: 0 0 50px var(--collor-fontHover);
     transition: 1s;
 }
 

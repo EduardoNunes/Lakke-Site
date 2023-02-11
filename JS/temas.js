@@ -20,8 +20,6 @@ let player3;
 let player2;
 let player1;
 
-
-
 function onYouTubeIframeAPIReady() {    
     
   player5 = new YT.Player('player5', {
@@ -59,8 +57,7 @@ function onYouTubeIframeAPIReady() {
       events: {
       'onStateChange': onPlayerStateChange
       }
-  });   
-  
+  });  
 
   player2 = new YT.Player('player2', {
       height: '200',
@@ -73,7 +70,6 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
       }
   });  
-  
 
   player1 = new YT.Player('player1', {
       height: '200',
@@ -88,35 +84,56 @@ function onYouTubeIframeAPIReady() {
   }); 
 }
 
-
 //function onPlayerReady(event) {
 //    event.target.playVideo();
 //   }
 
-
 function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING) {
-        switch (event.target.getVideoData().video_id) {
-            case 'bjbVX5aVpbo':
-                document.body.setAttribute('data-theme', 't-follow-the-flow');
-                break;
-            case 'LdzjYhwqFbg':
-                document.body.setAttribute('data-theme', 't-autobots');
-                break;
-            case 'h9EaozzlyS0':
-                document.body.setAttribute('data-theme', 't-eye-of-horus');
-                break;
-            case 'PgmjXGNFp2c':
-                document.body.setAttribute('data-theme', 't-meu-nordeste');
-                break;
-            case 'mehOsoGLjDQ':
-                document.body.setAttribute('data-theme', 't-artificial-intelligence');
-                break;
-            default:
-                document.body.removeAttribute('data-theme', 't-decepticons');
-                break;
-        }
-    } else if (event.data == YT.PlayerState.PAUSED) {
-        document.body.removeAttribute('data-theme');
-    }
+  var players = [player1, player2, player3, player4, player5];
+  var allPaused = true;
+  
+  for (var i = 0; i < players.length; i++) {
+      var player = players[i];
+      if (player === event.target) {
+          continue;
+      }
+      
+      if (event.data == YT.PlayerState.PLAYING) {
+          player.pauseVideo();
+      }
+      if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+        allPaused = false;
+        break;
+      }
+  }
+
+  if (allPaused) {
+    document.body.removeAttribute('data-theme');
+  }
+
+  if (event.data == YT.PlayerState.PLAYING) {
+      
+      switch (event.target.getVideoData().video_id) {
+          case 'bjbVX5aVpbo':
+              document.body.setAttribute('data-theme', 't-follow-the-flow');                
+              break;
+          case 'LdzjYhwqFbg':
+              document.body.setAttribute('data-theme', 't-autobots');                
+              break;
+          case 'h9EaozzlyS0':
+              document.body.setAttribute('data-theme', 't-eye-of-horus');                
+              break;
+          case 'PgmjXGNFp2c':
+              document.body.setAttribute('data-theme', 't-meu-nordeste');                
+              break;
+          case 'mehOsoGLjDQ':
+              document.body.setAttribute('data-theme', 't-artificial-intelligence');                
+              break;
+          default:
+              document.body.removeAttribute('data-theme');
+              break;
+      }
+  }  
 }
+
+

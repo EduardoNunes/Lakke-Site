@@ -38,12 +38,14 @@ controls.forEach((control) => {
 
         items[currentItem].scrollIntoView({
             behavior: "center",
+            inline: "start",
             block: "nearest",
             behavior: "smooth",
         });
 
         items2[currentItem].scrollIntoView({
             behavior: "center",
+            inline: "start",
             block: "nearest",
             behavior: "smooth",
         });
