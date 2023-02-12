@@ -48,9 +48,9 @@ body {
     --img-logo: url(../images/LK\ sangue.png);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
-    --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
+    --img-bg: url(../images/decepticons\ square\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
-    --img-bg-spotify: url(../images/fumaça.jpg);
+    --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
     transition: all 8s ease-in-out;
     background-size: cover;
     background-position: center;
@@ -62,8 +62,8 @@ body[data-theme="t-decepticons"] {
     --font-escolha: var(--font-tipo-1);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
-    --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
-    --img-bg-spotify: url(../images/fumaça.jpg);
+    --img-bg: url(../images/decepticons\ square\ 1800.jpg);
+    --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     transition: all 6s ease-in-out;
 }
@@ -73,8 +73,8 @@ body[data-theme="t-artificial-intelligence"] {
     --font-escolha: var(--font-tipo-5);
     --collor-font: #00bbff;
     --collor-fontHover: #9138ff;
-    --img-bg: url(../images/capa\ artificial\ intelligence.jpg);
-    --img-bg-spotify: url(../images/space4.jpg);
+    --img-bg: url(../images/capa\ artificial\ intelligence\ 1800.jpg);
+    --img-bg-spotify: url(../images/space4\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #7391ffec, #080038e9);
     transition: all 6s ease-in-out;
 }
@@ -84,8 +84,8 @@ body[data-theme="t-meu-nordeste"] {
     --font-escolha: var(--font-tipo-4);
     --collor-font: #10940b;
     --collor-fontHover: #963700;
-    --img-bg: url(../images/capa\ meu\ nordeste.jpg);
-    --img-bg-spotify: url(../images/caatinga1.jpg);
+    --img-bg: url(../images/capa\ meu\ nordeste\ 1800.jpg);
+    --img-bg-spotify: url(../images/caatinga1\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, rgb(168, 113, 77), #5f2c09);
     transition: all 6s ease-in-out;
 }
@@ -95,7 +95,7 @@ body[data-theme="t-eye-of-horus"] {
     --font-escolha: var(--font-tipo-3);
     --collor-font: #ffbb00;
     --collor-fontHover: #fffc40;
-    --img-bg: url(../images/capa\ olho\ de\ horus.jpg);
+    --img-bg: url(../images/capa\ olho\ de\ horus\ 1800.jpg);
     --img-bg-spotify: url(../images/Areia\ noite.jpg);
     --color-header-footer: linear-gradient(to right, #595d64e7, #ffbb00cf);
     transition: all 6s ease-in-out;
@@ -106,8 +106,8 @@ body[data-theme="t-autobots"] {
     --font-escolha: var(--font-tipo-1);
     --collor-font: #0cb1f8;
     --collor-fontHover: #acaa3a;
-    --img-bg: url(../images/autobots2\ _\ nome.jpg);
-    --img-bg-spotify: url(../images/Optimus7.png);
+    --img-bg: url(../images/autobots2\ 1700.jpg);
+    --img-bg-spotify: url(../images/Optimus7\ 1800.png);
     --color-header-footer: linear-gradient(to right, #acaa3ad2, #0cb1f8d7);
     transition: all 6s ease-in-out;
 }
@@ -118,7 +118,7 @@ body[data-theme="t-follow-the-flow"] {
     --collor-font: #099b1f;
     --collor-fontHover: #ec6767;
     --font-tipo: url(../Fontes/GreatVibes-Regular.ttf);
-    --img-bg: url(../images/capa\ follow\ the\ flow.jpg);
+    --img-bg: url(../images/capa\ follow\ the\ flow\ 1800.jpg);
     --img-bg-spotify: url(../images/crepusculo2.jpg);
     --color-header-footer: linear-gradient(to right, #fffd8c, #7a2b4a);
     transition: all 6s ease-in-out;
