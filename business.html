@@ -43,117 +43,105 @@
         </div>
     </header>                          
         <div class="coligado">           
-            <div class="caixa-coligado">                                 
+            <div class="caixa-coligado">
                 <h1>Irmandade se constrói juntos!</h1>                  
-                <ul>
-                    <li>
-                        <h4>Parceiro</h4>                            
-                        <span id="vantagens-parceiro">
-                            <p onclick="vantagenspar1()" class="subtitle">Permuta de serviços e/ou produtos</p>
-                            <span id="vantagens-parceiro1">
-                                <h5>Vamos conversar sobre troca de serviços ou de produtos que Lakke pode oferecer por algum serviço/produto que você tenha para somar: Alguns serviços/produtos de Lakke são: </h5>
-                                <ul>
-                                    <li>
-                                        <h5>Shows</h5>
-                                    </li>                                    
-                                    <li>
-                                        <h5>vinhetas sonoras</h5>
-                                    </li>
-                                    <li>
-                                        <h5>trilhas sonoras</h5>
-                                    </li>
-                                    <li>
-                                        <h5>arranjo</h5>
-                                    </li>
-                                    <li>
-                                        <h5>sound designe</h5>
-                                    </li>
-                                    <li>
-                                        <h5>composição</h5>
-                                    </li>
-                                    <li>
-                                        <h5>direção musical</h5>
-                                    </li>
-                                    <li>
-                                        <h5>criação de site em HTML CSS e JavaScritp</h5>
-                                    </li>
-                                    <li>
-                                        <h5>Aulas de: (produção musical, composição, orquestração, arranjo, mixagem, teoria musical, guitarra e violão)</h5>
-                                    </li>                                       
-                                </ul>
+                <div class="caixa">
+                    <ul>
+                        <li>
+                            <h4>Parceiro</h4>                            
+                            <span id="vantagens-parceiro">
+                                <p onclick="vantagenspar1()" class="subtitle">Permuta de serviços e/ou produtos</p>
+                                <span id="vantagens-parceiro1">
+                                    <h5>Vamos fazer troca de serviços ou de produtos? Lakke pode contribuir de diversas formas: Alguns serviços/produtos de Lakke são: </h5>
+                                    <div class="produtos">
+                                        <h5>• Shows</h5>                                
+                                        <h5>• vinhetas sonoras</h5>                                
+                                        <h5>• trilhas sonoras</h5>                                
+                                        <h5>• arranjos</h5>                                
+                                        <h5>• sound designe</h5>                                
+                                        <h5>• composição</h5>                                
+                                        <h5>• direção musical</h5>                                
+                                        <h5>• criação de site em HTML CSS e JavaScritp</h5>                                
+                                        <h5>• Aulas de: (produção musical, composição, orquestração, arranjo, mixagem, teoria musical, guitarra e violão)</h5>
+                                    </div>
+                                </span>
+                                <p onclick="vantagenspar2()" class="subtitle">Permuta de divulgação</p>                                
+                                <span id="vantagens-parceiro2">
+                                    <h5>Vamos conversar sobre troca de divulgações, uma mão lava a outra.</h5>
+                                </span>
+                                <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
                             </span>
-                            <p onclick="vantagenspar2()" class="subtitle">Permuta de divulgação</p>                                
-                            <span id="vantagens-parceiro2">
-                                <h5>Vamos conversar sobre divulgações, quem sabe encontremos algo que pode ser benéfico pra todos nós?</h5>
+                            <button onclick="vantagenspar()" id="btnSaibaMaisPar">Saiba mais</button>
+                        </li>
+                        <li>
+                            <h4>Apoiador</h4>                            
+                            <span id="vantagens-apoiador">
+                                <p onclick="vantagensapo1()" class="subtitle">Divulgação de marca no site e nas redes sociais</p>
+                                <span  id="vantagens-apoiador1">
+                                    <h5>Que tal sua marca aparecendo nas principais plataformas de Lakke? Site, Insta, Face, Tik Tok e Only fans?</h5>
+                                </span>
+                                <p onclick="vantagensapo2()" class="subtitle">Divulgação de marca em vídeos</p>
+                                <span id="vantagens-apoiador2">              
+                                    <h5>Vamos colocar sua marca em conteúdos permantes de Lakke como vídeos também ter vídeos promocionais direcionados à sua marca?</h5>
+                                </span>
+                                <p onclick="vantagensapo3()" class="subtitle">Rede de contatos</p>
+                                <span  id="vantagens-apoiador3">
+                                    <h5>Vamos construir uma rede de contatos para multiplicar nossas divulgações?</h5>
+                                </span>
+                                <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
                             </span>
-                            <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
-                        </span>
-                        <button onclick="vantagenspar()" id="btnSaibaMaisPar">Saiba mais</button>
-                    </li>
-                    <li>
-                        <h4>Apoiador</h4>                            
-                        <span id="vantagens-apoiador">
-                            <p onclick="vantagensapo1()" class="subtitle">Divulgação de marca no site e nas redes sociais</p>
-                            <span  id="vantagens-apoiador1">
-                                <p>Adicionar texto</p>
+                            <button onclick="vantagensapo()" id="btnSaibaMaisApo">Saiba mais</button>
+                        </li>
+                        <li>
+                            <h4>Patrocinador</h4>                            
+                            <span id="vantagens-patrocinador">
+                                <p onclick="vantagenspat1()" class="subtitle">Area exclusiva para patrocinadores no site</p>
+                                <span id="vantagens-patrocinador1">
+                                    <h5>Tenha uma área exclusiva com infomações e direcionamento para as redes sociais do seu negócio.</h5>
+                                </span>
+                                <p onclick="vantagenspat2()" class="subtitle">Area exclusiva da marca nas redes sociais</p>
+                                <span id="vantagens-patrocinador2">
+                                    <h5>Vamos colocar uma área exclusiva com destaque e conteúdos voltados para sua marca nas redes sociais.</h5>
+                                </span>
+                                <p onclick="vantagenspat3()" class="subtitle">Divulgação em eventos</p>
+                                <span id="vantagens-patrocinador3">
+                                    <h5>Sua marca em banners de eventos vinculados a Lakke e montagem de stands dos seus produtos.</h5>
+                                </span>
+                                <p onclick="vantagenspat4()" class="subtitle">Divulgação em vídeos de conteúdos</p>
+                                <span id="vantagens-patrocinador4">
+                                    <h5>Sua marca sendo divulgada através de conteúdos em redes sociais com direcionamento preciso.</h5>
+                                </span>
+                                <p onclick="vantagenspat5()" class="subtitle">Participação ativa nos projetos</p>
+                                <span id="vantagens-patrocinador5">
+                                    <h5>A marca LK, desenvolve diversos projetos onde Lakke é um deles, seja um patrocinador e faça parte destes projetos.</h5>
+                                </span>
+                                <p onclick="vantagenspat6()" class="subtitle">Entrada franca em eventos</p>
+                                <span id="vantagens-patrocinador6">
+                                    <h5>Entre de patrão nos eventos vinculados a Lakke.</h5>
+                                </span>
+                                <p onclick="vantagenspat7()" class="subtitle">Rede de divulgação</p>
+                                <span id="vantagens-patrocinador7">
+                                    <p>Seja parte da rede de divulgação e contatos ampliando o alcance da sua marca.</p>
+                                </span>
+                                <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
                             </span>
-                            <p onclick="vantagensapo2()" class="subtitle">Divulgação de marca em vídeos</p>
-                            <span id="vantagens-apoiador2">                                    
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagensapo3()" class="subtitle">Rede de contatos</p>
-                            <span  id="vantagens-apoiador3">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
-                        </span>
-                        <button onclick="vantagensapo()" id="btnSaibaMaisApo">Saiba mais</button>
-                    </li>
-                    <li>
-                        <h4>Patrocinador</h4>                            
-                        <span id="vantagens-patrocinador">
-                            <p onclick="vantagenspat1()" class="subtitle">Area exclusiva para patrocinadores no site</p>
-                            <span id="vantagens-patrocinador1">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat2()" class="subtitle">Area exclusiva da marca nas redes sociais</p>
-                            <span id="vantagens-patrocinador2">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat3()" class="subtitle">Divulgação em eventos</p>
-                            <span id="vantagens-patrocinador3">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat4()" class="subtitle">Divulgação em vídeos de conteúdos</p>
-                            <span id="vantagens-patrocinador4">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat5()" class="subtitle">Participação ativa nos projetos</p>
-                            <span id="vantagens-patrocinador5">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat6()" class="subtitle">Entrada franca em eventos</p>
-                            <span id="vantagens-patrocinador6">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <p onclick="vantagenspat7()" class="subtitle">Rede de divulgação</p>
-                            <span id="vantagens-patrocinador7">
-                                <p>Adicionar texto</p>
-                            </span>
-                            <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
-                        </span>
-                        <button onclick="vantagenspat()" id="btnSaibaMaisPat">Saiba mais</button>
-                    </li>
-                    <li>
-                        <h4>Collab bro?</h4>
-                        <span id="vantagens-collab">
-                            <h5>Que tal fazer uma track com Lakke? Se você é produtor de psytrance e tá na disposição de fazer uma música em conjunto com lakke, me mande uma mensagem, vamos trocar essa ideia e fazer aceontecer.</h5>
-                            <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
-                        </span>                 
-                        <button onclick="vantagenscol()" id="btnSaibaMaisCol">Saiba mais</button>           
-                    </li>                        
-                </ul>
-                                               
+                            <button onclick="vantagenspat()" id="btnSaibaMaisPat">Saiba mais</button>
+                        </li>
+                        <li>
+                            <h4>Collab bro?</h4>
+                            <span id="vantagens-collab">
+                                <h5>Que tal fazer uma track com Lakke? Se você é produtor de psytrance e tá na disposição de fazer uma música em conjunto com lakke, me mande uma mensagem, vamos trocar essa ideia e fazer acontecer.</h5>
+                                <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
+                            </span>                 
+                            <button onclick="vantagenscol()" id="btnSaibaMaisCol">Saiba mais</button>           
+                        </li>                        
+                    </ul>
+                    <div class="qr-code">
+                        <img src="images/qr code.jpeg" alt="Qr code donation">
+                        <p title="Quando eu entrar no meu reino, vou me lembrar de você.">Caso não se encaixe em alguma das alternativas de irmandade, você pode também fortalecer a Arte de Lakke fazendo uma doação do tamanho que seu coração estiver. Caso também não tenha condiçõe, enviar uma mensagem positiva já é um ato de irmão. Gratidão por ser um elo fortalecedor!</p>
+                        <a href="falecomlakke.html" class="button mensagem" target="_blank">Mandar mensagem</a>
+                    </div>
+                </div>
             </div>
         </div>       
     <footer>

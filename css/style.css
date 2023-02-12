@@ -65,7 +65,7 @@ body[data-theme="t-decepticons"] {
     --img-bg: url(../images/Decepticons\ square\ 3000.jpg);
     --img-bg-spotify: url(../images/fumaça.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 body[data-theme="t-artificial-intelligence"] {
@@ -74,9 +74,9 @@ body[data-theme="t-artificial-intelligence"] {
     --collor-font: #00bbff;
     --collor-fontHover: #9138ff;
     --img-bg: url(../images/capa\ artificial\ intelligence.jpg);
-    --img-bg-spotify: url(../images/space1.jpg);
+    --img-bg-spotify: url(../images/space4.jpg);
     --color-header-footer: linear-gradient(to right, #7391ffec, #080038e9);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 body[data-theme="t-meu-nordeste"] {
@@ -85,9 +85,9 @@ body[data-theme="t-meu-nordeste"] {
     --collor-font: #10940b;
     --collor-fontHover: #963700;
     --img-bg: url(../images/capa\ meu\ nordeste.jpg);
-    --img-bg-spotify: url(../images/caatinga.jpg);
+    --img-bg-spotify: url(../images/caatinga1.jpg);
     --color-header-footer: linear-gradient(to right, rgb(168, 113, 77), #5f2c09);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 body[data-theme="t-eye-of-horus"] {
@@ -98,7 +98,7 @@ body[data-theme="t-eye-of-horus"] {
     --img-bg: url(../images/capa\ olho\ de\ horus.jpg);
     --img-bg-spotify: url(../images/Areia\ noite.jpg);
     --color-header-footer: linear-gradient(to right, #595d64e7, #ffbb00cf);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 body[data-theme="t-autobots"] {
@@ -109,7 +109,7 @@ body[data-theme="t-autobots"] {
     --img-bg: url(../images/autobots2\ _\ nome.jpg);
     --img-bg-spotify: url(../images/Optimus7.png);
     --color-header-footer: linear-gradient(to right, #acaa3ad2, #0cb1f8d7);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 body[data-theme="t-follow-the-flow"] {
@@ -121,7 +121,7 @@ body[data-theme="t-follow-the-flow"] {
     --img-bg: url(../images/capa\ follow\ the\ flow.jpg);
     --img-bg-spotify: url(../images/crepusculo2.jpg);
     --color-header-footer: linear-gradient(to right, #fffd8c, #7a2b4a);
-    transition: all 8s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 
 header {
@@ -343,6 +343,7 @@ li.slick-active button {
     flex-flow: row nowrap;
     gap: 15px;
     height: 5px;
+    position: relative;
 }
 
 .gallery1 .item,.gallery2 .item2 {
@@ -354,8 +355,14 @@ li.slick-active button {
     transition: all 300ms ease-in-out;
 }
 
-.gallery1 .current-item,.gallery2 .current-item2 {
+.gallery1 .current-item {
     border: 3px solid var(--collor-fontHover);
+    box-shadow: 0 0 10px 8px var(--collor-font);
+}
+
+.gallery2 .current-item2 {
+    border: 3px solid var(--collor-fontHover);
+    box-shadow: 0 0 10px 8px var(--collor-font);
 }
 
 .arrow-left,
@@ -769,17 +776,63 @@ footer p {
     border: 2px solid var(--collor-font);
     margin: 30px;
     padding: 10px 20px 30px 1%;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .coligado h1 {
     font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 2em);
     text-align: center; 
-    margin-top: 10px;   
+    margin: 10px 0 20px 0;   
     color: var(--collor-font);
     transition: .3s;
     text-shadow: 1px 1px 0 black;
+    width: 100%;
+}
+
+.caixa-coligado .caixa {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+.caixa-coligado ul {
+    width: 40%;
+}
+
+.caixa-coligado .qr-code {
+    margin-top: 25px;
+    text-align: right;
+    width: 37em;
+    min-width: 140px;    
+}
+
+.caixa-coligado .qr-code img {
+    width: 30%;
+    margin-right: 11%;
+    min-width: 150px;
+}
+
+.caixa-coligado .qr-code p:hover {
+    color: var(--collor-fontHover);
+}
+
+.caixa-coligado .qr-code p {
+    font-family: var(--font-escolha);
+    color: var(--collor-font);
+    max-width: 300px;
+    min-width: 140px;
+    margin: 10px 0 0 auto;
+    text-align: justify;
+    text-shadow: 1px 1px black;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.caixa-coligado .qr-code a {
+    width: 152px;    
+    margin: 10px 5px 0 auto;
+    
 }
 
 .coligado h4 {
@@ -790,7 +843,11 @@ footer p {
     text-shadow: 1px 1px 0 black;
 }
 
-.coligado p {
+.coligado ul {
+    min-width: 190px;
+}
+
+.coligado ul p {
     font-family: var(--font-escolha);
     font-size: clamp(1em, 1em + 1vw, 1.2em);
     color: var(--collor-font);
@@ -799,9 +856,9 @@ footer p {
 }
 
 .coligado h5 {
-    font-family: var(--font-escolha);
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 7%;
-    color: var(--collor-fontHover);
+    color: white;
     text-shadow: 1px 1px 0 black;
 }
 
@@ -815,7 +872,6 @@ footer p {
     color: var(--collor-font);
     text-shadow: 1px 1px 0 black;
 }
-
 
 .caixa-coligado button, .caixa-coligado .button, .quadro-geral button {
     height: 27px;
@@ -852,8 +908,8 @@ footer p {
 }
 
 .caixa-coligado .button {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: 5%;
     display: block;    
     width: 153px;
 }
