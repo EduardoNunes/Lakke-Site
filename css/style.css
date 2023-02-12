@@ -794,6 +794,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     min-width: 100%;
+    justify-content: space-between;
 }
 
 .caixa-coligado ul {
@@ -802,14 +803,14 @@ footer p {
 
 .caixa-coligado .qr-code {
     margin-top: 25px;
-    text-align: right;
-    width: 37em;
-    min-width: 140px;    
+    text-align: center;
+    width: 30%;
+    min-width: 220px;
+    padding: 10px;
 }
 
 .caixa-coligado .qr-code img {
     width: 30%;
-    margin-right: 11%;
     min-width: 150px;
 }
 
@@ -820,9 +821,8 @@ footer p {
 .caixa-coligado .qr-code p {
     font-family: var(--font-escolha);
     color: var(--collor-font);
-    max-width: 300px;
-    min-width: 140px;
-    margin: 10px 0 0 auto;
+    width: 100%;
+    min-width: 200px;
     text-align: justify;
     text-shadow: 1px 1px black;
     transition: all .3s ease-in-out;
