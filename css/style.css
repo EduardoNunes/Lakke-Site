@@ -48,7 +48,7 @@ body {
     --img-logo: url(../images/LK\ sangue.png);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
-    --img-bg: url(../images/decepticons\ square\ 1800.jpg);
+    --img-bg: url(../images/decepticons\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
     transition: all 8s ease-in-out;
@@ -62,7 +62,7 @@ body[data-theme="t-decepticons"] {
     --font-escolha: var(--font-tipo-1);
     --collor-font: #f13239;
     --collor-fontHover: #e1b55e;
-    --img-bg: url(../images/decepticons\ square\ 1800.jpg);
+    --img-bg: url(../images/decepticons\ 1800.jpg);
     --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     transition: all 6s ease-in-out;
@@ -201,16 +201,37 @@ header a:hover {
 }
 
 .banner {
-    height: 400px;
-    max-width: max-content;
-    display: flex;
     border-bottom: 1px solid var(--collor-font);
 }
 
-.banner img{
+.slider-principal {
+    position: relative;
+    height: 400px;
+}
+
+.slider1, .slider2 {
+    position: relative;
+    height: 400px;
+    background-image: var(--img-bg-spotify);
+}
+
+.banner img {
     height: 400px;
     width: 100%;
-    object-fit: cover;    
+    object-fit: cover;
+}
+
+.slider-principal h1 {
+    position: absolute;
+    font-family: var(--font-escolha);
+    color: var(--collor-font);
+    text-shadow: 3px 3px #000000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    font-size: 200%;
 }
 
 button.slick-prev {
@@ -1035,3 +1056,14 @@ footer p {
     }
 }
 
+@media (max-width: 768px) {
+    .slider-principal h1 {
+      font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .slider-principal h1 {
+      font-size: 20px;
+    }
+}
