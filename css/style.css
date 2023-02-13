@@ -204,6 +204,15 @@ header a:hover {
     border-bottom: 1px solid var(--collor-font);
 }
 
+.slider-principal .slider1 h1 {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.slider-principal .slider1 h1:hover {
+    color: var(--collor-fontHover);
+}
+
 .slider-principal {
     position: relative;
     height: 400px;
@@ -212,7 +221,6 @@ header a:hover {
 .slider1, .slider2 {
     position: relative;
     height: 400px;
-    background-image: var(--img-bg-spotify);
 }
 
 .banner img {
