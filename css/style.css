@@ -218,7 +218,7 @@ header a:hover {
     height: 400px;
 }
 
-.slider1, .slider2 {
+.slider0, .slider1, .slider2 {
     position: relative;
     height: 400px;
 }
@@ -254,6 +254,14 @@ button.slick-prev {
     top: 33%;
     left: 15%;
     cursor: pointer;
+    box-shadow: 0px 0px 15px 5px var(--collor-font);
+    border-radius: 40%;
+    transition: all .3s ease-in-out;
+}
+
+button.slick-prev:hover, button.slick-next:hover {
+    box-shadow: 0px 0px 20px 5px var(--collor-fontHover);
+    border-radius: 50%; 
 }
 
 button.slick-next {
@@ -268,6 +276,9 @@ button.slick-next {
     top: 33%;
     right: 15%;
     cursor: pointer;
+    box-shadow: 0px 0px 15px 5px var(--collor-font);
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
 }
 
 .slick-list {

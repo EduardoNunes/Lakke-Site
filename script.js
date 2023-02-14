@@ -5,7 +5,7 @@ $('.slider-principal').slick({
     slidesToShow: 1,
     adaptativeHeight: true,
     autoplay: true,
-    autoplaySpeed: 3000000
+    autoplaySpeed: 3000
     });
 
 
