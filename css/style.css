@@ -568,7 +568,7 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 25px;
-    padding-top: 20px;   
+    padding-top: 20px;    
 }
 
 .logo-apoiadores h1 {
@@ -582,7 +582,9 @@ section {
     transition: 0.3s;
     border-radius: 50%;
     box-shadow: 0 0 25px 5px var(--collor-font);
-    margin-top: 10px;  
+    margin-top: 10px;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo-apoiadores img:hover {
@@ -766,9 +768,9 @@ footer p {
 
 .obrigado .texto-obrigado {
     max-width: 1200px;
-    background-image: url('../images/Cimento\ 2.jpeg');
-    opacity: 87%;
     border: 2px solid var(--collor-font);
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     padding: 30px;
     margin-left: auto;
