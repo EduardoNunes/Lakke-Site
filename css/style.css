@@ -520,7 +520,9 @@ section {
     max-width: 350px;
     border-radius: 50%;
     box-shadow: 0 0 40px var(--collor-font);
-    transition: 0.3s;    
+    transition: 0.3s;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .imagem-lakke img:hover {
