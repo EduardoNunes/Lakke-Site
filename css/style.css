@@ -230,10 +230,6 @@ header a:hover {
     object-fit: cover;
 }
 
-.banner .slider0 {
-    background-color: 0 0 0 0.5;
-}
-
 .banner .slider0 h1 {
     box-shadow: 0 0 10px 5px black;
     background-color: rgba(0, 0, 0, 0.6);
@@ -241,7 +237,7 @@ header a:hover {
 
 .banner .slider2 h1 {
     box-shadow: 0 0 10px 5px black;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .slider-principal h1 {
