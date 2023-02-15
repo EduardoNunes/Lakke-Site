@@ -821,13 +821,12 @@ footer p {
 .coligado {    
     max-width: 1200px;
     height: auto;
-    min-height: 550px;
+    min-height: 500px;
     margin-left: auto;
     margin-right: auto;
     opacity: 90%;
-    background: #000000;
+    background: #000000;    
     background-color: rgba(0, 0, 0, 0.7);
-    
 }
 
 .caixa-coligado {
@@ -837,9 +836,9 @@ footer p {
     background-repeat: no-repeat;
     min-height: 500px;
     border: 2px solid var(--collor-font);
-    margin: 30px;
+    margin: 30px 0;
     padding: 10px 20px 30px 1%;
-    border-radius: 10px;    
+    border-radius: 10px;  
 }
 
 .coligado h1 {
