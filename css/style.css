@@ -817,6 +817,9 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     opacity: 90%;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    
 }
 
 .caixa-coligado {
@@ -828,7 +831,7 @@ footer p {
     border: 2px solid var(--collor-font);
     margin: 30px;
     padding: 10px 20px 30px 1%;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .coligado h1 {
