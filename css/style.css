@@ -639,6 +639,8 @@ footer p {
     box-shadow: 0 0 30px #f13239;
     border-radius: 50%;
     transition: .3s;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imagem-lakke2 img:hover {
@@ -669,6 +671,10 @@ footer p {
     width: 100%;
     min-width: 320px;
     padding: 20px;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    height: 340px;
 }
 
 .caixa div {
@@ -1044,6 +1050,8 @@ footer p {
     box-shadow: 0 0 30px var(--collor-font);
     border-radius: 50%;
     transition: .5s;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .artistas .smart .foto-smart:hover {
@@ -1067,6 +1075,8 @@ footer p {
     border-radius: 50%;
     width: 100%;
     transition: .5s;
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .artistas .space .foto-space:hover {
