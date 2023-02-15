@@ -232,12 +232,23 @@ header a:hover {
 
 .banner .slider0 h1 {
     box-shadow: 0 0 10px 5px black;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.banner .slider1 h1 {
+    box-shadow: 0 0 10px 5px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .banner .slider2 h1 {
     box-shadow: 0 0 10px 5px black;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .slider-principal h1 {
