@@ -47,7 +47,7 @@ body {
     background-image: var(--img-bg);
     --img-logo: url(../images/LK\ sangue.png);
     --collor-font: #f13239;
-    --collor-fontHover: #e1b55e;
+    --collor-fontHover: #ffaa00;
     --img-bg: url(../images/decepticons\ 1800.jpg);
     --color-header-footer: linear-gradient(to right, #777777, #000000);
     --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
@@ -211,6 +211,7 @@ header a:hover {
 
 .slider-principal .slider1 h1:hover {
     color: var(--collor-fontHover);
+    box-shadow: 0 0 10px 5px var(--collor-fontHover);
 }
 
 .slider-principal {
@@ -229,11 +230,26 @@ header a:hover {
     object-fit: cover;
 }
 
+.banner .slider0 {
+    background-color: 0 0 0 0.5;
+}
+
+.banner .slider0 h1 {
+    box-shadow: 0 0 10px 5px black;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner .slider2 h1 {
+    box-shadow: 0 0 10px 5px black;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .slider-principal h1 {
     position: absolute;
     font-family: var(--font-escolha);
     color: var(--collor-font);
-    text-shadow: 3px 3px #000000;
+    text-shadow:0 0 10px #000000;
+    box-shadow: 0 0 10px 5px black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -543,7 +559,7 @@ section {
     text-shadow: 1px 1px rgb(0, 0, 0);    
     padding-left: 8px;
     color: var(--collor-font);
-    border-left: 4px solid #e1b55e;
+    border-left: 4px solid var(--collor-fontHover);
     height: 30px;
 }
 
