@@ -320,9 +320,10 @@ button.slick-next {
 
 .slick-dots {
     display: flex;
-    left: 44%;
     position: absolute;    
     top: 350px;
+    width: 100%;
+    justify-content: center;
 }
 
 li.slick-active button {
