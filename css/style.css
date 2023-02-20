@@ -607,7 +607,7 @@ section {
     box-shadow: 0 0 25px 5px var(--collor-font);
     margin-top: 10px;
     background: #000000;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .logo-apoiadores img:hover {
