@@ -855,9 +855,9 @@ footer p {
 }
 
 .caixa-coligado {
-    background-image: url('../images/LK\ prata.png');
+    background-image: url('../images/lakke-ai-azul-claro.png');
     background-position: center;
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat;
     min-height: 500px;
     border: 2px solid var(--collor-font);
