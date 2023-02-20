@@ -10,6 +10,11 @@ h1 {
 
 
 @font-face {
+    font-family: 'Psycho bold italic';     
+    src: url(../Fontes/Psycho\ Bold\ Italic.otf);
+}
+
+@font-face {
     font-family: 'Transformers Movie';     
     src: url(../Fontes/Transformers\ Movie.ttf);
 }
@@ -35,6 +40,7 @@ h1 {
 }
 
 :root {
+    --font-tipo-0: 'Psycho bold italic';
     --font-tipo-1: 'Transformers Movie', 'cursive';
     --font-tipo-2: 'Dancing Script', 'cursive';
     --font-tipo-3: 'Egyptian Letterss', 'cursive';
@@ -45,12 +51,13 @@ h1 {
 
 body {
     background-image: var(--img-bg);
-    --img-logo: url(../images/LK\ sangue.png);
-    --collor-font: #f13239;
-    --collor-fontHover: #ffaa00;
-    --img-bg: url(../images/decepticons\ 1800.jpg);
-    --color-header-footer: linear-gradient(to right, #777777, #000000);
-    --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
+    --img-logo: url(../images/Lk\ azul.png);
+    --font-escolha: var(--font-tipo-0);
+    --collor-font: #6bf3ff;
+    --collor-fontHover: #ff266e;
+    --img-bg: url(../images/Cogumels.jpg);
+    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #6bf3ff 10%, #f94b86 25%, #d92445 40%, #270a29 50%, #140c21 50%);
+    --img-bg-spotify: url(../images/roxo.png);
     transition: all 8s ease-in-out;
     background-size: cover;
     background-position: center;
@@ -97,7 +104,7 @@ body[data-theme="t-eye-of-horus"] {
     --collor-fontHover: #fffc40;
     --img-bg: url(../images/capa\ olho\ de\ horus\ 1800.jpg);
     --img-bg-spotify: url(../images/Areia\ noite.jpg);
-    --color-header-footer: linear-gradient(to right, #595d64e7, #ffbb00cf);
+    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 15%, #FDB931 20%, #ffae00 30%, #8A6E2F 40%, #595d64e7 90%);
     transition: all 6s ease-in-out;
 }
 
@@ -656,7 +663,7 @@ footer p {
 
 .imagem-lakke2 img {
     width: 100%;
-    box-shadow: 0 0 30px #f13239;
+    box-shadow: 0 0 30px 10px var(--collor-fontHover);
     border-radius: 50%;
     transition: .3s;
     background: #000000;
@@ -664,7 +671,7 @@ footer p {
 }
 
 .imagem-lakke2 img:hover {
-    box-shadow: 0 0 70px 5px var(--collor-fontHover);
+    box-shadow: 0 0 70px 10px var(--collor-font);
     transition: 2s;
 }
 
