@@ -11,7 +11,7 @@ h1 {
 
 @font-face {
     font-family: 'Psycho bold italic';     
-    src: url(../Fontes/Psycho\ Bold\ Italic.otf);
+    src: url(../Fontes/Psycho.otf);
 }
 
 @font-face {
@@ -56,7 +56,7 @@ body {
     --collor-font: #6bf3ff;
     --collor-fontHover: #ff266e;
     --img-bg: url(../images/Cogumels.jpg);
-    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #6bf3ff 10%, #f94b86 25%, #d92445 40%, #270a29 50%, #140c21 50%);
+    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #6bf3ff 10%, #f94b85ec 25%, #d92445e8 40%, #270a29f0 50%, #140c21f3 50%);
     --img-bg-spotify: url(../images/roxo.png);
     transition: all 8s ease-in-out;
     background-size: cover;
