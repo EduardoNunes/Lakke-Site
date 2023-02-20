@@ -331,8 +331,12 @@ li.slick-active button {
 }
 
 .slick-dots li {    
-    padding-left: 10px;
     display: inline-block;
+}
+
+.slick-dots li + li{    
+    padding-left: 10px;
+
 }
 
 .slick-initialized {
