@@ -235,6 +235,7 @@ header a:hover {
     height: 400px;
     width: 100%;
     object-fit: cover;
+    opacity: 0.98;
 }
 
 .banner .slider0 h1 {
@@ -476,6 +477,7 @@ li.slick-active button {
 section {
     width: auto;
     background-image: var(--img-bg-spotify);
+    opacity: 0.97;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
