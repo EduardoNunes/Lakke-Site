@@ -1,0 +1,62 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    height: 80vh;    
+    text-align: center;
+}
+
+.container .texto-obrigado {
+    max-width: 1200px;
+    border: 2px solid var(--collor-font);
+    background: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container h1, h2, h3 {    
+    font-size: clamp(1em, 1em + 1vw, 2em);   
+    font-family: var(--font-escolha);
+    text-decoration: none;
+    color: var(--collor-font);
+    text-shadow: 1px 1px black;
+    transition: .3s;
+}
+
+.container .texto {
+    border: 2px solid var(--collor-font);
+    background-color: black;
+    border-radius: 8px;
+    width: 29%;
+    min-width: 170px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+}
+
+.container .texto a {
+    width: 100%;
+    font-size: clamp(1em, 0.5em + 1vw, 1.5em);   
+    font-family: var(--font-escolha);
+    text-decoration: none;
+    color: var(--collor-font);
+    text-shadow: 1px 1px black;
+    transition: .3s;
+}
+
+.container  a:hover {
+    color: var(--collor-fontHover);;
+    transition: .3s;
+}
+
+.container  .texto:hover {
+    border: 2px solid #e1b55e;
+    transition: .3s;
+    box-shadow: 0 0 15px var(--collor-font);
+}

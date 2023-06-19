@@ -4,96 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="script.js" defer></script>
     <link rel="shortcut icon" href="images/LK-sangue ico.png">
     <title>Lakke</title>
 </head>
 <body>
-    <header>                   
-        <div class="centro">
-            <a href="index.html">
-                <div class="logo"></div>
-            </a>          
-            <nav>
-                <ul>
-                    <li><a href="index.html" target="_blank">Início</a></li>
-                    <li><a href="collabs.html" target="_blank">Collabs</a></li>
-                    <li><a href="business.html" target="_blank">Business</a></li>
-                    <li><a href="falecomlakke.html" target="_blank">Mensagem</a></li>
-                    <li><a href="https://psytrancelegends.netlify.app/">PsyTrance Legends</a></li>
-                </ul>
-            </nav>           
-            <div class="icones">
-                <a href="https://www.instagram.com/lakke_edu/" target="_blank">
-                    <img src="icones/instagram.png" alt="Instagram" title="Instagram">
-                </a>
-                <a href="https://open.spotify.com/artist/6h2hCwAfix7b85YscDDXLb" target="_blank">
-                    <img src="icones/spotify.png" alt="Spotify" title="Spotify">
-                </a>
-                <a href="https://www.youtube.com/channel/UChBnFqEtuObmvJ_0etsHvbg" target="_blank">
-                    <img src="icones/youtube.png" alt="Youtube" title="Youtube">
-                </a>
-                <a href="https://soundcloud.com/laekke" target="_blank">
-                    <img src="icones/Soundcloud.png" alt="Soundcloud" title="SoundCloud">
-                </a>                
-                <a href="https://www.tiktok.com/@lakke_edu?_t=8Z34KliWx9B&_r=1" target="_blank">
-                    <img src="icones/tiktok.png" alt="Tik Tok" title="TikTok">
-                </a>                
-            </div>        
-        </div>
-    </header>    
+    <header>
+        <div class="fundo-header" id="header"></div>
+        <nav class="menu-button">
+            <img src="icones/menu.png" id="img-menu" onclick="abrirMenu()" alt="Imagem de menu">
+            <ul id="itens-menu" onmouseleave="abrirMenu()">
+                <li><a href="index.html"><strong>HOME</strong></a></li>
+                <li><a href="pages/falecomlakke/falecomlakke.html" target="_blank"><strong>MESSENGE</strong></a></li>
+                <li><a href="#"><strong>GAME</strong></a></li>
+            </ul>
+        </nav>
 
-    <div class="banner">
-        <div class="slider-principal">
-            <div class="slider0">
-                <h1>Siga Lakke nas redes sociais</h1> 
-                <img src="images/roxo.png" alt="redes sociais" title="banner Redes sociais">
-            </div>
-            <div class="slider1">                
-                <a href="https://onerpm.link/413555926592" target="_blank"><h1>Decepticons está no ar! Ouça aqui na casa virtual de Lakke.<br>Ou clique aqui e ouça em sua plataforma!</h1></a>
-                <img src="images/roxo.png" alt="Decepticons" title="Banner Decepticons">
-            </div>
-            <div class="slider2">
-                <h1>Em breve<br>Vídeo Aulas de produção musical para iniciantes</h1> 
-                <img src="images/prod mus.jpg" alt="Aulas produção" title="Banner vídeo aulas">
-            </div>  
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>  
+        
+        <div class="icones">
+            <nav class="follow">
+                <img src="icones/follow.png" onclick="abrirIcones()" alt="Imagem follow">
+
+                <ul id="itens-icones" onmouseleave="abrirIcones()">
+                    <li><a href="https://www.instagram.com/lakke_edu/" target="_blank">
+                        <img src="icones/instagram.png" alt="Instagram" title="Instagram">
+                    </a></li>
+                    <li><a href="https://open.spotify.com/artist/6h2hCwAfix7b85YscDDXLb" target="_blank">
+                        <img src="icones/spotify.png" alt="Spotify" title="Spotify">
+                    </a></li>
+                    <li><a href="https://www.youtube.com/channel/UChBnFqEtuObmvJ_0etsHvbg" target="_blank">
+                        <img src="icones/youtube.png" alt="Youtube" title="Youtube">
+                    </a></li>
+                    <li><a href="https://soundcloud.com/laekke" target="_blank">
+                        <img src="icones/Soundcloud.png" alt="Soundcloud" title="SoundCloud">
+                    </a></li>
+                    <li><a href="https://www.tiktok.com/@lakke_edu?_t=8Z34KliWx9B&_r=1" target="_blank">
+                        <img src="icones/tiktok.png" alt="Tik Tok" title="TikTok">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>        
+    </header>
+
+    <main>        
+        <div class="container">
+            <img src="images/Ethernal Capa2.jpeg" alt="Capa do album Eternal">
+            <div class="opacidade"></div>
+            <div class="opacidade-left"></div>
         </div>
-    </div>
-    <div class="container">
-        <h2>Músicas com players interativos no youtube</h2>
-        <a href="https://www.youtube.com/channel/UChBnFqEtuObmvJ_0etsHvbg" target="_blank">
-            <h3>Siga Lakke no youtube clicando aqui</h3>
-        </a>
-        <button class="arrow-left arrow-control" aria-label="Previous image">◄</button>
-        <div class="gallery-wrapper">
-            <div class="gallery1">
-                <div class="item current-item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
+
+        <div class="conteudo">            
+            <div class="left">
+                <h1>ETERNAL</h1>
+                <h2>Lançamento dia 30/06/2023</h2>
+                <h3>Smart e Lakke se juntaram para produzir uma track com muito groove, criatividade e energia! Uma mistura Baiana e Sergipana, conxão Salvador - Aracajivs!</h3>
+                <div class="links">
+                    <a href="https://onerpm.link/156840050134" target="_blank">PreSave</a>
+                    <a href="https://open.spotify.com/intl-pt/artist/6h2hCwAfix7b85YscDDXLb" target="_blank"><img src="images/Lk azul.png" alt=""></a>
+                    <a href="https://soundcloud.com/smartlivedj" target="_blank"><img src="images/smartlogo.png" alt="" style="width: 80px;"></a>
+                </div>
             </div>
-            <div class="gallery">
-                <div id="player6" class="video"></div>
-                <div id="player5" class="video"></div>
-                <div id="player4" class="video"></div>
-                <div id="player3" class="video"></div>
-                <div id="player2" class="video"></div>
-                <div id="player1" class="video"></div>
-            </div>
-            <div class="gallery2">
-                <div class="item2 current-item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-                <div class="item2"></div>
-            </div>
-        </div> 
-        <button class="arrow-right arrow-control" aria-label="Next image">►</button>
+            <div class="right">
+                
+                <a href="https://onerpm.link/156840050134" target="_blank">
+                    <img src="images/pre-save.PNG" alt="Imagem Pré-save">
+                </a>
+            </div>      
+        </div>
+    </main>
+    
+    <div class="section">
+        <div class="container">
+            <h2>Músicas com players interativos no youtube</h2>
+            <a href="https://www.youtube.com/channel/UChBnFqEtuObmvJ_0etsHvbg" target="_blank">
+                <h3>Siga Lakke no youtube clicando aqui</h3>
+            </a>
+            <button class="arrow-left arrow-control" aria-label="Previous image">◄</button>
+            <div class="gallery-wrapper">
+                <div class="gallery1">
+                    <div class="item current-item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <div class="gallery">
+                    <div id="player6" class="video"></div>
+                    <div id="player5" class="video"></div>
+                    <div id="player4" class="video"></div>
+                    <div id="player3" class="video"></div>
+                    <div id="player2" class="video"></div>
+                    <div id="player1" class="video"></div>
+                </div>
+                <div class="gallery2">
+                    <div class="item2 current-item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                    <div class="item2"></div>
+                </div>
+            </div> 
+            <button class="arrow-right arrow-control" aria-label="Next image">►</button>
+        </div>
     </div>
     <section>
         <div class="container2">
@@ -118,7 +137,7 @@
     <section class="apoiadores">
         <div class="logo-apoiadores">
             <h1 class="apoio">Visite nossos apoiadores</h1>
-            <a href="https://www.linkedin.com/in/daniela-lordello-2b9358138" target="_blank">
+            <a href="https://www.instagram.com/danielalordelloadv/" target="_blank">
                 <img style="padding: 30px;" src="images/danilogo.png" alt="Logo Daniela Lordello" title="Lordello Advocacia">            
             </a>
             <a href="https://inkstickers.com.br/" target="_blank">
@@ -138,10 +157,10 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="header.js"></script>
     <script type="text/javascript" src="JS/jquery1.js"></script>
-    <script type="text/javascript" src="JS/jquery2.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="carrossel-netflix.js"></script>
     <script type="text/javascript" src="JS/temas.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://apis.google.com/js/api.js"></script>

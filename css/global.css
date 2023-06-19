@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+h1 {
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';     
+    src: url(Fontes/static/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Transformers Movie';     
+    src: url(../Fontes/Transformers\ Movie.ttf);
+}
+
+@font-face {    
+    font-family: 'Dancing Script';     
+    src: url(../Fontes/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {    
+    font-family: 'Egyptian Letterss';     
+    src: url(../Fontes/Egyptian\ Letters.ttf);
+}
+
+@font-face {    
+    font-family: 'xilosa';     
+    src: url(../Fontes/xilosa_.ttf);
+}
+
+@font-face {    
+    font-family: 'space age';     
+    src: url(../Fontes/space\ age.ttf);
+}
+
+:root {
+    --font-tipo-0: 'Raleway';
+    --font-tipo-1: 'Transformers Movie', 'cursive';
+    --font-tipo-2: 'Dancing Script', 'cursive';
+    --font-tipo-3: 'Egyptian Letterss', 'cursive';
+    --font-tipo-4: 'xilosa', 'cursive';
+    --font-tipo-5: 'space age', 'cursive';
+    --font-escolha: var(--font-tipo-1);
+}
+
+body {
+    background-image: var(--img-bg);
+    --img-logo: url(../images/LK\ branco.png);
+    --font-escolha: var(--font-tipo-0);
+    --collor-font: #ffffff;
+    --collor-fontHover: #ffffff;
+    --img-bg: none;
+    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #6bf3ff 10%, #f94b85ec 25%, #d92445e8 40%, #270a29f0 50%, #140c21f3 50%);
+    --img-bg-spotify: url(../images/roxo.png);
+    transition: all 1s ease-in-out;
+    background-color: rgb(27, 27, 27);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body[data-theme="t-decepticons"] {
+    --img-logo: url(../images/LK\ sangue.png);
+    --font-escolha: var(--font-tipo-1);
+    --collor-font: #f13239;
+    --collor-fontHover: #e1b55e;
+    --img-bg: url(../images/decepticons\ 1800.jpg);
+    --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
+    --color-header-footer: linear-gradient(to right, #777777, #000000);
+    transition: all 6s ease-in-out;
+}
+
+body[data-theme="t-artificial-intelligence"] {
+    --img-logo: url(../images/Lk\ azul1.png);
+    --font-escolha: var(--font-tipo-5);
+    --collor-font: #00bbff;
+    --collor-fontHover: #9138ff;
+    --img-bg: url(../images/capa\ artificial\ intelligence\ 1800.jpg);
+    --img-bg-spotify: url(../images/space4\ 1800.jpg);
+    --color-header-footer: linear-gradient(to right, #7391ffec, #080038e9);
+    transition: all 6s ease-in-out;
+}
+
+body[data-theme="t-meu-nordeste"] {
+    --img-logo: url(../images/Lk\ marrom.png);
+    --font-escolha: var(--font-tipo-4);
+    --collor-font: #10940b;
+    --collor-fontHover: #963700;
+    --img-bg: url(../images/capa\ meu\ nordeste\ 1800.jpg);
+    --img-bg-spotify: url(../images/caatinga1\ 1800.jpg);
+    --color-header-footer: linear-gradient(to right, rgb(168, 113, 77), #5f2c09);
+    transition: all 6s ease-in-out;
+}
+
+body[data-theme="t-eye-of-horus"] {
+    --img-logo: url(../images/LK\ gold.png);
+    --font-escolha: var(--font-tipo-3);
+    --collor-font: #ffbb00;
+    --collor-fontHover: #fffc40;
+    --img-bg: url(../images/capa\ olho\ de\ horus\ 1800.jpg);
+    --img-bg-spotify: url(../images/Areia\ noite.jpg);
+    --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 15%, #FDB931 20%, #ffae00 30%, #8A6E2F 40%, #595d64e7 90%);
+    transition: all 6s ease-in-out;
+}
+
+body[data-theme="t-autobots"] {
+    --img-logo: url(../images/LK\ prata.png);
+    --font-escolha: var(--font-tipo-1);
+    --collor-font: #0cb1f8;
+    --collor-fontHover: #acaa3a;
+    --img-bg: url(../images/autobots2\ 1700.jpg);
+    --img-bg-spotify: url(../images/Optimus7\ 1800.png);
+    --color-header-footer: linear-gradient(to right, #acaa3ad2, #0cb1f8d7);
+    transition: all 6s ease-in-out;
+}
+
+body[data-theme="t-follow-the-flow"] {
+    --img-logo: url(../images/LK\ verde.png);
+    --font-escolha: var(--font-tipo-2);
+    --collor-font: #099b1f;
+    --collor-fontHover: #ec6767;
+    --font-tipo: url(../Fontes/GreatVibes-Regular.ttf);
+    --img-bg: url(../images/capa\ follow\ the\ flow\ 1800.jpg);
+    --img-bg-spotify: url(../images/crepusculo2.jpg);
+    --color-header-footer: linear-gradient(to right, #fffd8c, #7a2b4a);
+    transition: all 6s ease-in-out;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 2;
+}
+
+header .fundo-header {
+    position: absolute;
+
+    width: 100%;
+    height: 100px;
+
+    background: rgb(15, 15, 14);
+
+    transition: ease-in-out .5s;
+}
+
+header .menu-button,
+header .icones {
+    width: 38px;
+    z-index: 2;
+}
+
+header .menu-button img, 
+header .icones .follow img {    
+    width: 38px;
+    border-radius: 2px;
+
+    background-color: var(--collor-font);    
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+header .icones .follow img {
+    padding: 3px;
+}
+
+header .menu-button img:hover, 
+.icones .follow img:hover {
+    padding: 2px;
+    background-color: var(--collor-fontHover);
+}
+
+header .icones .follow img:hover {
+    padding: 5px;
+}
+
+header .menu-button ul {
+    display: none;
+    position: absolute;
+
+    opacity: .97;
+    border-radius: 5px;
+
+    background-color: #484848;
+    
+    list-style: none;
+    z-index: 1;
+}
+
+header .menu-button ul li {
+    font-size: 12px;  
+    text-decoration: none;
+
+    font-family: var(--font-escolha);  
+    color: var(--collor-font);
+}
+
+header .menu-button ul li a {
+    display: flex;
+    align-items: center;
+
+    padding-left: 20px;    
+    width: 150px;
+    height: 40px;
+
+    color: var(--collor-font);
+
+    text-decoration: none;
+}
+
+header .menu-button ul li a:hover {
+    text-decoration: 2px underline;
+}
+
+header a {
+    z-index: 2;
+}
+
+header a .logo {
+    background-image: var(--img-logo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 85px;
+    height: 85px;
+    
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+header a .logo:hover {
+    box-shadow: 0 0 10px 5px var(--collor-font);
+    transition: .3s;
+}
+
+header .icones .follow ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+header .icones .follow ul li {
+    list-style: none;
+}
+
+header .icones .follow ul li a img {     
+    width: 40px;    
+    transition: 0.3s;
+}
+
+header .icones .follow ul li a img:hover {
+    width: 40px;
+    transition: 0.3s;    
+}
+
+header .icones .follow ul li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(15, 15, 14);
+    border-top: 2px solid var(--collor-font);
+    padding: 64px 0 0 0;
+    text-align: center;
+    height: 180px;
+    transition: all 8s ease-in-out;
+}
+
+footer p {
+    font-family: var(--font-escolha);
+    font-size: 18px;
+    color: var(--collor-font);
+    text-shadow: 1px 1px black;
+    cursor: grab;
+}
+
