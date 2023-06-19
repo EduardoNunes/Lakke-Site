@@ -56,7 +56,7 @@ body {
     --collor-fontHover: #ffffff;
     --img-bg: none;
     --color-header-footer: radial-gradient(ellipse farthest-corner at right bottom, #6bf3ff 10%, #f94b85ec 25%, #d92445e8 40%, #270a29f0 50%, #140c21f3 50%);
-    --img-bg-spotify: url(../images/roxo.png);
+    --img-bg-spotify: url(../images/fumaça\ 1800.jpg);
     transition: all 1s ease-in-out;
     background-color: rgb(27, 27, 27);
     background-size: cover;

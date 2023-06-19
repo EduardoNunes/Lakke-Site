@@ -48,16 +48,18 @@ main .conteudo {
 
     width: 80%;
     height: 500px;
-    top: 140px;
+    top: 180px;
 }
 
 main .conteudo .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     width: 50%;
     min-width: 310px;
     margin-bottom: 50px;
+    padding: 0 15px;
 }
 
 main .conteudo .left h1 {
@@ -146,6 +148,7 @@ main .conteudo .right {
 
     width: 50%;
     min-width: 280px;
+    padding: 0 15px;
 }
 
 main .conteudo .right a {
@@ -155,7 +158,7 @@ main .conteudo .right a {
 
 main .conteudo .right img {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     min-width: 280px;
 
     border-radius: 5px;
@@ -299,16 +302,22 @@ main .conteudo .right img:hover {
 }
 
 section {
+    display: flex;
+    align-items: center;
+
+    height: auto;
+    min-height: 700px;
     width: auto;
+
     background-image: var(--img-bg-spotify);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    left: auto;
-    right: auto;
+
     border-top: 1px solid var(--collor-font);
     border-bottom: 1px solid var(--collor-font);
     padding-top: 40px;
+
     transition: all 8s ease-in-out;
 }
 
@@ -319,32 +328,33 @@ section {
     padding-bottom: 30px;    
 }
 
-.spotify {
+.container2 .spotify {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
     align-items: center;
+    justify-content: space-around;
     text-align: center;
-    justify-content: space-around;    
+
+    max-width: 100%;
 }
 
-.spotify div {    
+.container2 .spotify div {    
     flex: 1 1 372px;
-    padding: 5px;
+    padding: 15px 0;
 }
 
-.logo-spotify img {    
+.container2 .spotify .logo-spotify img {    
     width: 31%;
     padding-bottom: 15px;
     transition: 0.3s;
 }
 
-.logo-spotify img:hover {
+.container2 .spotify .logo-spotify img:hover {
     width: 34%;
     transition: 0.3s;    
 }
 
-.logo-spotify h3 {
+.container2 .spotify .logo-spotify h3 {
     color: var(--collor-font);
     text-shadow: 1px 1px black;
     font-family: var(--font-escolha);
@@ -352,14 +362,14 @@ section {
     transition: 0.3s;
 }
 
-.logo-spotify h3:hover {
+.container2 .spotify .logo-spotify h3:hover {
     cursor: pointer;
     color: var(--collor-fontHover);
     transition: 0.3s;
     text-shadow: 0 0 10px var(--collor-font);
 }
 
-.logo-spotify a {
+.container2 .spotify .logo-spotify a {
     text-decoration: none;
 }
 
@@ -430,7 +440,7 @@ section {
     transition: 0.3s;
     border-radius: 50%;
     box-shadow: 0 0 25px 5px var(--collor-font);
-    margin-top: 10px;
+    margin-top: 25px;
     background: #000000;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -725,6 +735,25 @@ section {
 
 @media screen and (max-width: 768px) {
     main .conteudo .left h1 {
+        font-size: 50px;
+    }
+
+    main .conteudo .left h2 {
+        font-size: 30px;
+    }
+
+    main .conteudo .left h3 {
+        padding: 0 15px;
+        font-size: 15px;
+    }
+
+    .slider-principal h1 {
+        font-size: 30px;
+      }
+}
+
+@media screen and (max-width: 425) {
+    main .conteudo .left h1 {
         font-size: 30px;
     }
 
@@ -740,10 +769,4 @@ section {
     .slider-principal h1 {
         font-size: 30px;
       }
-}
-
-@media (max-width: 425px) {
-    .slider-principal h1 {
-      font-size: 20px;
-    }
 }
